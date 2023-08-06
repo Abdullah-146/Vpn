@@ -13,11 +13,15 @@ function Card({
   return (
     <div
       className={`flex justify-between ${
-        reverse ? "flex-row-reverse" : ""
-      }    `}
+        reverse ? "lg:flex-row-reverse" : ""
+      }  flex-col lg:flex-row     `}
     >
-      <img src={SVG} alt="computer guy" className="hidden sm:flex  " />
-      <div className="flex flex-col text-start  w-full sm:ml-20 ">
+      <img
+        src={SVG}
+        alt="computer guy"
+        className="mr-0 lg:mr-10 mb-4 lg:mb-0"
+      />
+      <div className="flex flex-col text-start  w-full  ">
         <div className="flex justify-between    ">
           <h1 className="text-2xl font-bold text-simple text-start flex">
             <span>
