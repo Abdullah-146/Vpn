@@ -8,6 +8,7 @@ function Card({
   line1 = "Use Social Medias",
   line2 = "Like A Cup of Tee",
   reverse = false,
+  stars = true,
 }) {
   return (
     <div
@@ -24,7 +25,7 @@ function Card({
             </span>
             {iconText}
           </h1>
-          <Stars reverse={reverse} />
+          {stars && <Stars reverse={reverse} />}
         </div>
         <h1 className="text-heading font-heading ">
           {line1} <br /> {line2}
