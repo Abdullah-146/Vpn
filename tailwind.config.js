@@ -6,6 +6,7 @@ module.exports = {
         primary: "#092857",
         secondary: "#8D98A9",
         tertiary: "#FAFAFA",
+        bluish: "#0A7AF9",
         heading: "#092857",
         subHeading: "#8D98A9",
         simple: "#092857",
