@@ -20,9 +20,12 @@ module.exports = {
       fontWeight: {
         heading: "700",
         subHeading: "600",
+        simple: "400",
       },
       fontFamily: {
-        sans: ["ES Build TRIAL", "sans-serif"],
+        heading: ["Maven Pro", "sans-serif"],
+        subHeading: ["Maven Pro", "sans-serif"],
+        simple: ["Maven Pro", "sans-serif"],
       },
       // backgroundImage: {
       //   sign: "url('/src/images/side.png')",
