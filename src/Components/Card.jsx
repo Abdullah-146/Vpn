@@ -41,7 +41,7 @@ function Card({
           since the 1500s
         </p>
 
-        <p className="text-subHeading text-primary font-subHeading mt-5 flex  items-center cursor-pointer">
+        <p className="text-subHeading  font-subHeading text-[#092857] mt-5 flex  items-center cursor-pointer">
           Know More
           <span className="ml-1">
             <ArrowForwardIcon />
