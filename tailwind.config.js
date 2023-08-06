@@ -3,28 +3,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#FFFFFF",
-        secondary: "#3276FA",
+        primary: "#092857",
+        secondary: "#8D98A9",
         tertiary: "#FAFAFA",
-        heading: "#1E1E1E",
-        subHeading: "#1E1E1E",
-        simple: "#848FAC",
+        heading: "#092857",
+        subHeading: "#8D98A9",
+        simple: "#092857",
         border: "#EFF3FA",
         footer: "#021638",
       },
       fontSize: {
-        heading: "2rem",
-        subHeading: "2rem",
+        heading: "4rem",
+        subHeading: "1.5rem",
         simple: "1rem",
       },
       fontWeight: {
         heading: "700",
-        subHeading: "500",
+        subHeading: "600",
       },
       fontFamily: {
-        heading: ["Manrope"],
-        subHeading: ["Manrope"],
-        simple: ["Manrope"],
+        sans: ["ES Build TRIAL", "sans-serif"],
       },
       // backgroundImage: {
       //   sign: "url('/src/images/side.png')",
