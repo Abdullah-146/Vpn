@@ -4,7 +4,16 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto px-14;
+    @apply mx-auto lg:px-14 px-2;
     max-width: 100%;
   }
+}
+
+.bg {
+  background-image: url("./assets/Union.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }

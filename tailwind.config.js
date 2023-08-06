@@ -14,7 +14,7 @@ module.exports = {
         footer: "#021638",
       },
       fontSize: {
-        heading: "4rem",
+        heading: "2rem",
         subHeading: "1.5rem",
         simple: "1rem",
       },
@@ -28,10 +28,9 @@ module.exports = {
         subHeading: ["Maven Pro", "sans-serif"],
         simple: ["Maven Pro", "sans-serif"],
       },
-      // backgroundImage: {
-      //   sign: "url('/src/images/side.png')",
-      //   bannerImg: "url('/src/images/BannerImg.png')",
-      // },
+      backgroundImage: {
+        Footer: "url('/src/assets/FooterBackground.svg')",
+      },
     },
   },
   plugins: [],

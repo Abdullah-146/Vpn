@@ -12,9 +12,9 @@ function Card({
 }) {
   return (
     <div
-      className={`flex justify-between ${
+      className={`flex justify-between mt-10 ${
         reverse ? "lg:flex-row-reverse" : ""
-      }  flex-col lg:flex-row     `}
+      }  flex-col lg:flex-row   container    `}
     >
       <img
         src={SVG}
@@ -41,7 +41,7 @@ function Card({
           since the 1500s
         </p>
 
-        <p className="text-subHeading text-primary font-subHeading mt-5 flex  items-center cursor-pointer">
+        <p className=" text-primary text-2xl  font-subHeading mt-5 flex  items-center cursor-pointer">
           Know More
           <span className="ml-1">
             <ArrowForwardIcon />
