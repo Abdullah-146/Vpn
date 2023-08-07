@@ -45,8 +45,14 @@ function Home() {
       <Slider />
       <SliderReverse />
       <div className="flex-1 flex w-full items-center">
-        <div className="flex-1 border h-full">
-    
+        <div className="flex-1">
+          <Card
+            reverse={false}
+            line1="Enjoy the Stable"
+            line2="Connection And Ping"
+            iconText="Safe"
+            icon={stable}
+          />
         </div>
         <div className="flex-1">
           <CommentSlider />
