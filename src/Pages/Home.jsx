@@ -15,6 +15,7 @@ import IconicComponent from "../Components/IconicComponent";
 import TextComponent from "../Components/TextComponent";
 import Slider from "../Components/Slider";
 import SliderReverse from "../Components/SliderReverse";
+import CommentSlider from "../Components/CommentSlider";
 
 function Home() {
   return (
@@ -43,6 +44,14 @@ function Home() {
       <TextComponent />
       <Slider />
       <SliderReverse />
+      <div className="flex-1 flex w-full items-center">
+        <div className="flex-1 border h-full">
+    
+        </div>
+        <div className="flex-1">
+          <CommentSlider />
+        </div>
+      </div>
       <FaqBox />
       <Footer />
     </div>
