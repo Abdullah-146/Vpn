@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Css/slider.css";
+import "../Css/sliderReverse.css";
 
 import shield from "../assets/shield.svg";
 import planet from "../assets/planet.svg";
@@ -20,7 +20,7 @@ function SlidingComponent({ icon }) {
   );
 }
 
-function Slider() {
+function SliderReverse() {
   const [icons, setIcons] = useState([
     shield,
     planet,
@@ -32,8 +32,8 @@ function Slider() {
     emojihappy,
   ]);
   return (
-    <div className="logos mt-5">
-      <div className=" flex  logos-slide space-x-20  ">
+    <div className="logos1 mb-5">
+      <div className=" flex  logos-slide1 space-x-20  ">
         {icons.map((icon, index) => {
           return <SlidingComponent icon={icon} />;
         })}
@@ -42,4 +42,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default SliderReverse;

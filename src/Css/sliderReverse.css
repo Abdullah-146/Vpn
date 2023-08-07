@@ -1,0 +1,24 @@
+@keyframes sliderReverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logo-slide1 img {
+  height: 80px;
+}
+
+.logos1 {
+  overflow: hidden;
+  /* padding: 60px; */
+  padding: 10px;
+  /* background-color: #fff; */
+}
+
+.logos-slide1 {
+  white-space: nowrap;
+  animation: 10s sliderReverse infinite linear;
+}

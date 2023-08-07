@@ -14,6 +14,7 @@ import Footer from "../Components/Footer";
 import IconicComponent from "../Components/IconicComponent";
 import TextComponent from "../Components/TextComponent";
 import Slider from "../Components/Slider";
+import SliderReverse from "../Components/SliderReverse";
 
 function Home() {
   return (
@@ -41,6 +42,7 @@ function Home() {
       />
       <TextComponent />
       <Slider />
+      <SliderReverse />
       <FaqBox />
       <Footer />
     </div>
