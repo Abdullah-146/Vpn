@@ -19,13 +19,13 @@ function Vertical({ number, title }) {
 function IconicComponent() {
   const [icons, setIcons] = useState([Company1, Company2, Company3]);
   return (
-    <div className="flex justify-between w-full container ">
+    <div className="flex justify-between flex-wrap  w-full container ">
       <div className="flex space-x-10">
         <Vertical number={"1B"} title={"Downloads"} />
         <Vertical number={"30K"} title={"User In Month"} />
         <Vertical number={"40M"} title={"Premium User"} />
       </div>
-      <div className="flex space-x-10">
+      <div className="flex space-x-10 my-6  lg:my-0  ">
         {icons.map((icon, index) => {
           return <img src={icon} alt="" key={index} />;
         })}
