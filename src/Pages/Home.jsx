@@ -13,6 +13,7 @@ import FaqBox from "../Components/FaqBox";
 import Footer from "../Components/Footer";
 import IconicComponent from "../Components/IconicComponent";
 import TextComponent from "../Components/TextComponent";
+import Slider from "../Components/Slider";
 
 function Home() {
   return (
@@ -39,6 +40,9 @@ function Home() {
         icon={stable}
       />
       <TextComponent />
+
+      <Slider />
+
       <FaqBox />
       <Footer />
     </div>
