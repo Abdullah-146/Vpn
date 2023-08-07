@@ -25,7 +25,11 @@ function Card({
           }    mb-4 md:mb-0 flex-1 max-w-full md:max-w-[50%] md:max-h-[450px] `}
         />
       )}
-      <div className="flex flex-col text-start   flex-1 max-w-full md:max-w-[50%] ">
+      <div
+        className={`flex flex-col text-start   flex-1 max-w-full  ${
+          SVG ? "md:max-w-[50%]" : "md:max-w-[100%]"
+        }  `}
+      >
         <div className="flex justify-between    ">
           <h1 className="text-2xl font-bold text-simple text-start flex">
             <span>
