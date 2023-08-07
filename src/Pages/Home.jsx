@@ -12,6 +12,7 @@ import Nav from "../Components/Nav";
 import FaqBox from "../Components/FaqBox";
 import Footer from "../Components/Footer";
 import IconicComponent from "../Components/IconicComponent";
+import TextComponent from "../Components/TextComponent";
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function Home() {
         iconText="Safe"
         icon={stable}
       />
+      <TextComponent />
       <FaqBox />
       <Footer />
     </div>
