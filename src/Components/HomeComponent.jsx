@@ -12,7 +12,10 @@ function Vertical({ number, title }) {
       <p className=" text-5xl text-primary  font-subHeading  flex  items-center cursor-pointer mr-5">
         <span className="text-[#0A7AF9]">+</span> {number}
       </p>
-      <p className="text-subHeading font-subHeading"> {title} </p>
+      <p className="text-subHeading font-subHeading whitespace-nowrap ">
+        {" "}
+        {title}{" "}
+      </p>
     </div>
   );
 }
@@ -37,11 +40,7 @@ function HomeComponent({
         reverse ? "lg:flex-row-reverse " : ""
       }  flex-col lg:flex-row container mt-16 `}
     >
-      <img
-        src={SVG}
-        alt="computer guy"
-        className="mr-0 lg:mr-10 mb-4 lg:mb-0"
-      />
+      <img src={SVG} alt="computer guy" className="mr-0  mb-4 lg:mb-0" />
       {/* entire second div */}
       <div className="flex flex-col text-start  w-full  ">
         <div className="flex justify-between    ">
