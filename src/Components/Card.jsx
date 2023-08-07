@@ -19,9 +19,9 @@ function Card({
       <img
         src={SVG}
         alt="computer guy"
-        className="mr-0 md:mr-10 mb-4 md:mb-0 flex-1"
+        className="mr-0 md:mr-10 mb-4 md:mb-0 flex-1 max-w-full md:max-w-[50%]"
       />
-      <div className="flex flex-col text-start  w-full flex-1  ">
+      <div className="flex flex-col text-start   flex-1 max-w-full md:max-w-[50%] ">
         <div className="flex justify-between    ">
           <h1 className="text-2xl font-bold text-simple text-start flex">
             <span>
