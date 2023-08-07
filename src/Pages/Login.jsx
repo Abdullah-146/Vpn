@@ -6,20 +6,32 @@ import key from "../assets/key.svg";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import DoneIcon from "@mui/icons-material/Done";
 import Button from "../Components/Button";
+import MainLogo from "../assets/MainLogo.svg";
+import iconss from "../assets/icons.svg";
+import icons2 from "../assets/icons2.svg";
+import icons3 from "../assets/icons3.svg";
+import icons4 from "../assets/icons4.svg";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
+ const Icons = [
+     iconss
+      ,icons2,icons3,icons4
+  ]
   return (
-    <div className="h-screen w-screen bg-gradient-to-r from-[#c4e9f974] to-white pt-8 overflow-hidden"  onClick={()=> navigate(-1)} >
+  <div className="h-screen w-screen bg-gradient-to-r from-[#c4e9f974] to-white pt-8 overflow-hidden flex flex-col justify-between"   >
+    <div>
       {/* make button named back */}
-      <div className=" flex justify-center items-center py-5 rounded-full bg-white w-[150px]  ml-10 cursor-pointer  ">
+      <div className="flex justify-center items-center py-5 rounded-full bg-white w-[150px]  ml-10 cursor-pointer" onClick={()=> navigate(-1)}>
         <ArrowBackIcon /> Back
       </div>
       {/* button out */}
       {/* main div in */}
       <div className="flex justify-between ">
+        <div>
         <img src={LoginSvg} alt="" className="  " />
+        </div>
         {/* All login Fields in */}
         <div className="flex flex-col w-full  text-center items-center   ">
           <h1 className="text-4xl font-medium text-simple flex">
@@ -65,6 +77,28 @@ function Login() {
             </div>
           </form>
         </div>
+      </div>
+    </div>
+      {/* main out */}
+      <div className="flex h-16 w-full justify-between   "    >
+        {/* logo in */}
+      <div className="flex  items-center">
+        <img src={MainLogo} alt="" />
+        <p className="font-heading text-primary text-2xl ml-4 whitespace-nowrap mr-3  ">
+          Current <span className="font-normal">VPN</span>
+        </p>
+      </div>
+      {/* logo out */}
+      <div className="flex"  >
+        {
+          Icons.map((icon) => (
+            <img src={icon} alt="" className=" mr-4" />
+          ))
+
+        }
+
+      </div>
+
       </div>
     </div>
   );
