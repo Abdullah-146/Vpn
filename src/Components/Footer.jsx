@@ -9,11 +9,11 @@ import StarPurple500Icon from "@mui/icons-material/StarPurple500";
 
 const Footer = () => {
   return (
-    <div className="flex-1 flex flex-col bg-Footer object-fill bg-no-repeat bg-center space-y-3 ">
+    <div className="flex-1 flex flex-col bg-Footer object-fill bg-no-repeat bg-center space-y-3">
       <div className="self-center relative top-7">
         <KeyboardArrowUpIcon />
       </div>
-      <div className="flex flex-col md:flex-row justify-around p-5 relative top-16 ">
+      <div className="flex flex-col md:flex-row justify-around container relative top-16 ">
         <div className="flex-1 flex flex-col ">
           <div className="w-[80%] self-center space-y-3">
             <div className="flex flex-row items-center space-x-3">
