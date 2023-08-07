@@ -40,9 +40,7 @@ function Home() {
         icon={stable}
       />
       <TextComponent />
-
       <Slider />
-
       <FaqBox />
       <Footer />
     </div>
