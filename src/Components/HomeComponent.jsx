@@ -37,8 +37,8 @@ function HomeComponent({
   return (
     <div
       className={`flex justify-between ${
-        reverse ? "lg:flex-row-reverse " : ""
-      }  flex-col lg:flex-row container mt-16 `}
+        reverse ? "md:flex-row-reverse " : ""
+      }  flex-col md:flex-row container mt-16 `}
     >
       <img src={SVG} alt="computer guy" className="mr-0  mb-4 lg:mb-0" />
       {/* entire second div */}

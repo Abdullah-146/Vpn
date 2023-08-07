@@ -12,8 +12,8 @@ function Card({
 }) {
   return (
     <div
-      className={`flex justify-between lg:my-32 ${
-        reverse ? "lg:flex-row-reverse" : ""
+      className={`flex justify-between md:my-32 ${
+        reverse ? "md:flex-row-reverse" : ""
       }  flex-col lg:flex-row   container    `}
     >
       <img
