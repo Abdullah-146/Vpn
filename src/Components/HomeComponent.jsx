@@ -64,18 +64,6 @@ function HomeComponent({
 
         <img src={Download} alt="" className="w-96 h-52 cursor-pointer  " />
         {/* entire domain frim 1B to plaid */}
-        <div className="flex justify-between w-full">
-          <div className="flex space-x-10">
-            <Vertical number={"1B"} title={"Downloads"} />
-            <Vertical number={"30K"} title={"User In Month"} />
-            <Vertical number={"40M"} title={"Premium User"} />
-          </div>
-          <div className="flex space-x-10">
-            {icons.map((icon, index) => {
-              return <img src={icon} alt="" key={index} />;
-            })}
-          </div>
-        </div>
       </div>
     </div>
   );

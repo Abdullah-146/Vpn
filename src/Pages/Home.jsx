@@ -11,6 +11,7 @@ import HomeComponent from "../Components/HomeComponent";
 import Nav from "../Components/Nav";
 import FaqBox from "../Components/FaqBox";
 import Footer from "../Components/Footer";
+import IconicComponent from "../Components/IconicComponent";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Nav />
 
       <HomeComponent SVG={HomeSVG} icon={icon} />
+      <IconicComponent />
       <Card SVG={SVG} icon={icon} />
       <Card
         SVG={SVG2}
