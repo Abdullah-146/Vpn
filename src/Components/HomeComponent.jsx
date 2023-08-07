@@ -36,7 +36,7 @@ function HomeComponent({
   const [icons, setIcons] = useState([Company1, Company2, Company3]);
   return (
     <div
-      className={`flex justify-between ${
+      className={`flex justify-center  ${
         reverse ? "md:flex-row-reverse " : ""
       }  flex-col md:flex-row container mt-16 `}
     >
