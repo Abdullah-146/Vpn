@@ -19,7 +19,9 @@ function Card({
       <img
         src={SVG}
         alt="computer guy"
-        className="mr-0 md:mr-10 mb-4 md:mb-0 flex-1 max-w-full md:max-w-[50%]"
+        className={`mr-0 ${
+          reverse ? "md:ml-20" : "md:mr-20"
+        }    mb-4 md:mb-0 flex-1 max-w-full md:max-w-[50%] md:max-h-[450px] `}
       />
       <div className="flex flex-col text-start   flex-1 max-w-full md:max-w-[50%] ">
         <div className="flex justify-between    ">

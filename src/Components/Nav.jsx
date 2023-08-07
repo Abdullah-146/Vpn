@@ -41,9 +41,12 @@ function Nav() {
           );
         })}
       </div>
-      <div className="py-5 px-8 flex justify-center items-center rounded-lg">
+      <NavLink
+        className="py-5 px-8 flex justify-center items-center rounded-lg"
+        to={`/Login`}
+      >
         <p className="font-heading text-primary text-xl ml-4">Register</p>
-      </div>
+      </NavLink>
     </div>
   );
 }

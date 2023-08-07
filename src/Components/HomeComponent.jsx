@@ -40,7 +40,11 @@ function HomeComponent({
         reverse ? "md:flex-row-reverse " : ""
       }  flex-col md:flex-row container mt-16 `}
     >
-      <img src={SVG} alt="computer guy" className="mr-0  mb-4 md:mb-0 flex-1 max-w-full md:max-w-[50%]" />
+      <img
+        src={SVG}
+        alt="computer guy"
+        className="mr-0  mb-4 md:mb-0 flex-1 max-w-full md:max-w-[50%] max-h-[500px] "
+      />
       {/* entire second div */}
       <div className="flex flex-col text-start  flex-1 max-w-full md:max-w-[50%] ">
         <div className="flex justify-between    ">
