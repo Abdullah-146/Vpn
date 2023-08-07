@@ -15,7 +15,7 @@ module.exports = {
       },
       fontSize: {
         heading: "2rem",
-        subHeading: "1.5rem",
+        subHeading: "1.25rem",
         simple: "1rem",
       },
       fontWeight: {
