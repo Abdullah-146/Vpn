@@ -9,6 +9,8 @@ import lock from "../assets/lock.svg";
 import stable from "../assets/stable.svg";
 import HomeComponent from "../Components/HomeComponent";
 import Nav from "../Components/Nav";
+import FaqBox from "../Components/FaqBox";
+import Footer from "../Components/Footer";
 
 function Home() {
   return (
@@ -33,6 +35,8 @@ function Home() {
         iconText="Safe"
         icon={stable}
       />
+      <FaqBox />
+      <Footer />
     </div>
   );
 }

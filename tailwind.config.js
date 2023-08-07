@@ -6,6 +6,7 @@ module.exports = {
         primary: "#092857",
         secondary: "#8D98A9",
         tertiary: "#FAFAFA",
+        bluish: "#0A7AF9",
         heading: "#092857",
         subHeading: "#8D98A9",
         simple: "#092857",
@@ -13,7 +14,7 @@ module.exports = {
         footer: "#021638",
       },
       fontSize: {
-        heading: "4rem",
+        heading: "2rem",
         subHeading: "1.5rem",
         simple: "1rem",
       },
@@ -27,10 +28,9 @@ module.exports = {
         subHeading: ["Maven Pro", "sans-serif"],
         simple: ["Maven Pro", "sans-serif"],
       },
-      // backgroundImage: {
-      //   sign: "url('/src/images/side.png')",
-      //   bannerImg: "url('/src/images/BannerImg.png')",
-      // },
+      backgroundImage: {
+        Footer: "url('/src/assets/FooterBackground.svg')",
+      },
     },
   },
   plugins: [],
