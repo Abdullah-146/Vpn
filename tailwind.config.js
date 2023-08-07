@@ -14,8 +14,8 @@ module.exports = {
         footer: "#021638",
       },
       fontSize: {
-        heading: "3rem",
-        subHeading: "1.5rem",
+        heading: "2rem",
+        subHeading: "1.25rem",
         simple: "1rem",
       },
       fontWeight: {
