@@ -9,7 +9,7 @@ import StarPurple500Icon from "@mui/icons-material/StarPurple500";
 
 const Footer = () => {
   return (
-    <div className="flex-1 flex flex-col bg-Footer object-fill bg-no-repeat bg-center space-y-3">
+    <div className="flex-1 flex flex-col bg-transparent md:bg-Footer object-fill bg-no-repeat bg-center space-y-3">
       <div className="self-center relative top-7">
         <KeyboardArrowUpIcon />
       </div>
