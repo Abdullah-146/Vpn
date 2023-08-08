@@ -30,6 +30,7 @@ module.exports = {
       },
       backgroundImage: {
         Footer: "url('/src/assets/FooterBackground.svg')",
+        comment: "url('/src/assets/Comment.svg')",
       },
     },
   },

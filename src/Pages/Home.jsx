@@ -44,7 +44,7 @@ function Home() {
       <TextComponent />
       <Slider />
       <SliderReverse />
-      <div className="flex-1 flex w-full items-center">
+      <div className="flex-1 flex w-full items-center flex-col md:flex-row space-y-4 md:space-y-0 my-4">
         <div className="flex-1">
           <Card
             reverse={false}
@@ -55,7 +55,17 @@ function Home() {
           />
         </div>
         <div className="flex-1">
-          <CommentSlider />
+          <CommentSlider comments={[{
+            avatar: "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+            name: "John Doe",
+            comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          },
+          {
+            avatar: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+            name: "John Doe2",
+            comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          }
+          ]} />
         </div>
       </div>
       <FaqBox />

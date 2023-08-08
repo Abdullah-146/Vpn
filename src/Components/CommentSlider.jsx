@@ -1,51 +1,107 @@
-import React from "react";
+import React, { useCallback } from "react";
 import LeftComma from "../Svgs/LeftComma";
 import RightComma from "../Svgs/RightComma";
-import Background from "../Svgs/Comment";
+import Comment from "../assets/Comment.svg";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
-const CommentSlider = () => {
+const CommentSlider = ({ comments }) => {
+  const commentRef = React.useRef(null);
+  const avatarRef = React.useRef(null);
+  const [currentIndex,setCurrentIndex] = React.useState(0);
+
+  const onClickRight = () => {
+    //current display width
+    const scrollWidth = commentRef.current.scrollWidth / comments.length;
+
+    //smooth scroll
+    commentRef.current.scrollBy({
+      left: scrollWidth,
+      behavior: "smooth",
+    });
+    avatarRef.current.scrollBy({
+      left: scrollWidth,
+      behavior: "smooth",
+    });
+    if(currentIndex < (comments.length-1 )){
+        setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const onClickLeft = () => {
+    //smooth scroll
+    const scrollWidth = commentRef.current.scrollWidth / comments.length;
+    commentRef.current.scrollBy({
+      left: -scrollWidth,
+      behavior: "smooth",
+    });
+    avatarRef.current.scrollBy({
+      left: -scrollWidth,
+      behavior: "smooth",
+    });
+    if(currentIndex > 0){
+        setCurrentIndex(currentIndex - 1);
+    }
+  };
+
   return (
-    <div className="relative flex-1 flex flex-col items-center w-4/5 bg-transparent">
-      <div className="relative top-1/2 bg-white z-10 w-[15%] h-[15%] flex  p-4 rounded-full">
-        <img
-          className="max-w-14 rounded-full border"
-          src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg"
-          alt="user avatar"
-        />
+    <div className="relative flex-1  flex flex-col items-center container space-y-4">
+      <div
+        ref={avatarRef}
+        className="flex flex-row overflow-hidden w-20 h-20 rounded-full"
+      >
+        {comments.map((item, index) => (
+          <div
+            key={index.toString()}
+            className="min-w-full rounded-full  bg-white "
+          >
+            <img src={item.avatar} alt="" />
+          </div>
+        ))}
       </div>
-      <div style={{
-
-      }} className="bg-white rounded-lg flex-1 flex ">
-        <div className="w-6 absolute bg-black border-[red] rounded-lg top-0 left-0 -rotate-12" />
-        <div className="flex-1 flex flex-col space-y-2 p-6">
-          <div className="w-full flex items-center justify-between">
-            {/* <img src="../assets/leftComma.svg" alt="" /> */}
-            <LeftComma />
-            <RightComma />
-            {/* <img src="../assets/rightComma.svg" alt="" /> */}
-          </div>
-          <div className="w-full text-center">
-            <p className="text-subHeading font-subHeading">John Doe</p>
-          </div>
-          <div className="w-full text-center">
-            <p className="text-simple font-simple">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed .
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad..!
-            </p>
-          </div>
+      <div className="rounded-md w-full flex-1 flex flex-col items-center bg-white">
+        <div className="w-full flex items-center justify-between  px-10 py-3">
+          <LeftComma />
+          <RightComma />
+        </div>
+        <div ref={commentRef} className="flex-1 flex flex-row overflow-hidden">
+          {comments.map((item, index) => (
+            <div
+              key={index.toString()}
+              className="flex flex-col items-center justify-center min-w-full"
+            >
+              <p className="text-subHeading font-subHeading">{item.name}</p>
+              <p className="text-simple font-simple text-center">
+                {item.comment}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
+      <div className="flex flex-row space-x-1">
+        {comments.map((item, index) => (
+          <div
+            style={{
+              backgroundColor:
+                currentIndex === index ? "skyblue" : "#eee",
+            }}
+            key={index.toString()}
+            className="w-2 h-1 rounded-md"
+          />
+        ))}
+      </div>
+      <KeyboardArrowLeftIcon
+        onClick={onClickLeft}
+        sx={{ backgroundColor: "blue", color: "white", fontSize: 30 }}
+        className="absolute  top-1/2 left-10 w-10 h-10 bg-white rounded-full"
+      />
+      <KeyboardArrowRightIcon
+        onClick={onClickRight}
+        sx={{ backgroundColor: "blue", color: "white", fontSize: 30 }}
+        className="absolute top-1/2 right-10 w-10 h-10 bg-white rounded-full"
+      />
     </div>
   );
 };
-
-// const Controls = () => {
-//   return (
-//     <div>CommentSlider</div>
-//   )
-// }
-
-
 
 export default CommentSlider;
