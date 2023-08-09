@@ -1,0 +1,16 @@
+/* Extra small devices (phones, 600px and down)
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 425px) {
+  html {
+    font-size: 10px;
+  }
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+

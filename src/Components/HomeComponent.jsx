@@ -20,9 +20,7 @@ function Vertical({ number, title }) {
   );
 }
 
-function Horizontal() {
-  return null;
-}
+
 
 function HomeComponent({
   SVG,
