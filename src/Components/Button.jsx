@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button() {
+function Button({ text = "Login" }) {
   return (
     <button
       style={{
@@ -9,7 +9,7 @@ function Button() {
       }}
       className=" text-white rounded-full px-10 py-8 mt-10 w-full "
     >
-      <p className="text-white text-xl font-bold ">Login</p>
+      <p className="text-white text-xl font-bold ">{text}</p>
     </button>
   );
 }

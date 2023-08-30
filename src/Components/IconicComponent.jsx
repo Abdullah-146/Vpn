@@ -16,20 +16,26 @@ function Vertical({ number, title }) {
   );
 }
 
-function IconicComponent() {
+function IconicComponent({ Icons = true, contain = true }) {
   const [icons, setIcons] = useState([Company1, Company2, Company3]);
   return (
-    <div className="flex justify-between flex-wrap  w-full container ">
+    <div
+      className={`flex justify-between flex-wrap  w-full ${
+        contain ? "container" : ""
+      }  `}
+    >
       <div className="flex space-x-2 lg:space-x-10">
         <Vertical number={"1B"} title={"Downloads"} />
         <Vertical number={"30K"} title={"User In Month"} />
         <Vertical number={"40M"} title={"Premium User"} />
       </div>
-      <div className="flex flex-wrap lg:space-x-10 my-6  lg:my-0  ">
-        {icons.map((icon, index) => {
-          return <img src={icon} alt="" key={index} />;
-        })}
-      </div>
+      {Icons && (
+        <div className="flex flex-wrap lg:space-x-10 my-6  lg:my-0  ">
+          {icons.map((icon, index) => {
+            return <img src={icon} alt="" key={index} />;
+          })}
+        </div>
+      )}
     </div>
   );
 }

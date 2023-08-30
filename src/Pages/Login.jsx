@@ -11,7 +11,7 @@ import iconss from "../assets/icons.svg";
 import icons2 from "../assets/icons2.svg";
 import icons3 from "../assets/icons3.svg";
 import icons4 from "../assets/icons4.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ function Login() {
           </div>
           {/* All login Fields in */}
           <div className="flex flex-col w-full  text-center items-center   ">
-            <h1 className="text-4xl font-medium text-simple flex">
+            <h1 className="text-4xl font-medium text-primary flex">
               <span>Login In Your&nbsp;</span>
               <span className="font-heading">Account!</span>
             </h1>
@@ -73,7 +73,9 @@ function Login() {
                 <p className="ml-2 text-[#A6A6BB] font-semibold">
                   Do You Have Account? &nbsp;
                 </p>
-                <p className="text-[#0A7AF9] font-bold  "> Sign Up </p>
+                <Link to="/Register">
+                  <p className="text-[#0A7AF9] font-bold  "> Sign Up </p>
+                </Link>
               </div>
             </form>
           </div>

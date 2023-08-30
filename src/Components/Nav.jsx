@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MainLogo from "../assets/MainLogo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Nav() {
-  const [links, setLinks] = useState(["Home", "About Us", "Services", "Plans"]);
+  const location = useLocation();
+  const [links, setLinks] = useState(["Home", "AboutUs", "Services", "Plans"]);
   const [selectedLink, setSelectedLink] = useState("Home");
+
   const [hoverLink, setHoverLink] = useState("");
 
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setSelectedLink("Home");
+    } else {
+      setSelectedLink(location.pathname.slice(1));
+    }
+  }, [location]);
+
   return (
-    <div className="flex justify-between px-3  lg:px-10">
+    <div className="flex justify-between px-3  lg:px-10 z-10">
       <div className="flex  items-center">
         <img src={MainLogo} alt="" />
         <p className="font-heading text-primary text-2xl ml-4 whitespace-nowrap mr-3  ">
@@ -21,16 +31,14 @@ function Nav() {
             <NavLink
               to={`/${link}`}
               key={link}
-              className={`cursor-pointer  ${
-                selectedLink === link ? "" : ""
-              } p-1 rounded-lg     `}
-              onClick={() => setSelectedLink(link)}
+              className={`cursor-pointer   p-1 rounded-lg     `}
               onMouseOver={() => setHoverLink(link)}
               onMouseOut={() => setHoverLink("")}
+              onClick={() => setSelectedLink(link)}
             >
               <p
                 className={`font-subHeading text-lg ${
-                  hoverLink === link || selectedLink == link
+                  hoverLink === link || selectedLink === link
                     ? "text-primary"
                     : "text-secondary"
                 }`}

@@ -4,23 +4,6 @@ import Company1 from "../assets/Company1.svg";
 import Company2 from "../assets/Company2.svg";
 import Company3 from "../assets/Company3.svg";
 import Stars from "./Stars";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
-function Vertical({ number, title }) {
-  return (
-    <div className="flex flex-col justify-center items-center text-center ">
-      <p className=" text-5xl text-primary  font-subHeading  flex  items-center cursor-pointer mr-5">
-        <span className="text-[#0A7AF9]">+</span> {number}
-      </p>
-      <p className="text-subHeading font-subHeading whitespace-nowrap ">
-        {" "}
-        {title}{" "}
-      </p>
-    </div>
-  );
-}
-
-
 
 function HomeComponent({
   SVG,

@@ -16,6 +16,7 @@ import TextComponent from "../Components/TextComponent";
 import Slider from "../Components/Slider";
 import SliderReverse from "../Components/SliderReverse";
 import CommentSlider from "../Components/CommentSlider";
+import MainSvg from "../assets/MainSvg";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <Nav />
 
       <HomeComponent SVG={HomeSVG} icon={icon} />
+      {/* <MainSvg /> */}
       <IconicComponent />
       <Card SVG={SVG} icon={icon} />
       <Card
@@ -55,17 +57,24 @@ function Home() {
           />
         </div>
         <div className="flex-1">
-          <CommentSlider comments={[{
-            avatar: "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
-            name: "John Doe",
-            comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
-          },
-          {
-            avatar: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
-            name: "John Doe2",
-            comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
-          }
-          ]} />
+          <CommentSlider
+            comments={[
+              {
+                avatar:
+                  "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+                name: "John Doe",
+                comment:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+              },
+              {
+                avatar:
+                  "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
+                name: "John Doe2",
+                comment:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+              },
+            ]}
+          />
         </div>
       </div>
       <FaqBox />

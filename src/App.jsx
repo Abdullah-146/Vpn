@@ -7,6 +7,9 @@ import {
   Navigate,
 } from "react-router-dom";
 import Login from "./Pages/Login";
+import AboutUs from "./Pages/AboutUs";
+import Register from "./Pages/Register";
+import Services from "./Pages/Services";
 
 export default function App() {
   return (
@@ -14,6 +17,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Login" element={<Login />}></Route>
+        <Route path="/Register" element={<Register />}></Route>
+        <Route path="/AboutUs" element={<AboutUs />}></Route>
+        <Route path="/Services" element={<Services />}></Route>
 
         {/* Invalid url */}
         <Route path="*" element={<Navigate to="/" />} />
