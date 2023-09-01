@@ -8,7 +8,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const CommentSlider = ({ comments }) => {
   const commentRef = React.useRef(null);
   const avatarRef = React.useRef(null);
-  const [currentIndex,setCurrentIndex] = React.useState(0);
+  const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const onClickRight = () => {
     //current display width
@@ -23,8 +23,8 @@ const CommentSlider = ({ comments }) => {
       left: scrollWidth,
       behavior: "smooth",
     });
-    if(currentIndex < (comments.length-1 )){
-        setCurrentIndex(currentIndex + 1);
+    if (currentIndex < comments.length - 1) {
+      setCurrentIndex(currentIndex + 1);
     }
   };
 
@@ -39,8 +39,8 @@ const CommentSlider = ({ comments }) => {
       left: -scrollWidth,
       behavior: "smooth",
     });
-    if(currentIndex > 0){
-        setCurrentIndex(currentIndex - 1);
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
@@ -82,8 +82,7 @@ const CommentSlider = ({ comments }) => {
         {comments.map((item, index) => (
           <div
             style={{
-              backgroundColor:
-                currentIndex === index ? "skyblue" : "#eee",
+              backgroundColor: currentIndex === index ? "skyblue" : "#eee",
             }}
             key={index.toString()}
             className="w-2 h-1 rounded-md"

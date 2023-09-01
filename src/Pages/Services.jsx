@@ -23,6 +23,7 @@ import ServicesComponent from "../Components/ServicesComponent";
 import SuperImage from "../assets/SuperImage.svg";
 import Boxes from "../Components/Boxes";
 import Planet from "../assets/planet.svg";
+import CardSlider from "../Components/CardSlider";
 
 function Services() {
   return (
@@ -45,6 +46,7 @@ function Services() {
         Heading={"See How We Compare To Other Vpn Providers"}
         subHeading={"Why Choose Current VPN?"}
       />
+      <CardSlider />
 
       <div className="flex-1 flex w-full items-center flex-col md:flex-row space-y-4 md:space-y-0 my-4">
         <div className="flex-1">
