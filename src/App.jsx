@@ -10,6 +10,7 @@ import Login from "./Pages/Login";
 import AboutUs from "./Pages/AboutUs";
 import Register from "./Pages/Register";
 import Services from "./Pages/Services";
+import Plans from "./Pages/Plans";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/Register" element={<Register />}></Route>
         <Route path="/AboutUs" element={<AboutUs />}></Route>
         <Route path="/Services" element={<Services />}></Route>
+        <Route path="/Plans" element={<Plans />}></Route>
 
         {/* Invalid url */}
         <Route path="*" element={<Navigate to="/" />} />
