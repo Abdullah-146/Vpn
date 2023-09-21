@@ -29,6 +29,7 @@ import AboutUsSVG from "../assets/AboutUsSVG.svg";
 import icon3 from "../assets/chart-column.svg";
 import PlansBg from "../assets/PlansBg.svg";
 import PlansComponent from "../Components/PlansComponent";
+import PlansTable from "../Components/PlansTable";
 
 function Services() {
   return (
@@ -45,6 +46,7 @@ function Services() {
         Heading={"Join To Premium Members"}
         subHeading={"Our Plans"}
       />
+      <PlansTable />
 
       <DynamicText
         icon={Planet}

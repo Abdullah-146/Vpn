@@ -14,7 +14,7 @@ function CardBlur({
     <div
       className={`flex justify-center md:my-16 ${
         reverse ? "md:flex-row-reverse" : ""
-      }  flex-col md:flex-row container   `}
+      }  flex-col items-center md:flex-row container   `}
     >
       {SVG && (
         <div
