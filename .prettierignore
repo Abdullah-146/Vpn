@@ -1,3 +1,4 @@
-**/Screens
-**/Components
+**/Screens/**
+**/Components/**
 !**/services.js
+!**/OurPlans.jsx
