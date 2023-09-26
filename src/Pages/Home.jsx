@@ -22,10 +22,12 @@ function Home() {
   return (
     <div>
       <Nav />
+      <div className="bgg">
+        <HomeComponent SVG={HomeSVG} icon={icon} />
+        {/* <MainSvg /> */}
+        <IconicComponent />
+      </div>
 
-      <HomeComponent SVG={HomeSVG} icon={icon} />
-      {/* <MainSvg /> */}
-      <IconicComponent />
       <Card SVG={SVG} icon={icon} />
       <Card
         SVG={SVG2}
