@@ -18,13 +18,13 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<CommingSoon />}></Route>
-
+        {/* 
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/Register" element={<Register />}></Route>
         <Route path="/AboutUs" element={<AboutUs />}></Route>
         <Route path="/Services" element={<Services />}></Route>
-        <Route path="/Plans" element={<Plans />}></Route>
+        <Route path="/Plans" element={<Plans />}></Route> */}
 
         {/* Invalid url */}
         <Route path="*" element={<Navigate to="/" />} />
