@@ -36,7 +36,7 @@ function TextComponent({ title, para }) {
 
 function AboutUsIconic() {
   return (
-    <div className="container z-0 relative  my-24 mt-48 min-h-[100px]">
+    <div className="container z-0 relative  my-24 mt-48 min-h-[100px] hidden md:block  ">
       {/* absolute in */}
       <div className="absolute top-0 left-0 -z-10 ">
         <img src={Cloud} alt="" className="" />

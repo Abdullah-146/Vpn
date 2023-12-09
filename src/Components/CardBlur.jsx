@@ -12,7 +12,7 @@ function CardBlur({
 }) {
   return (
     <div
-      className={`flex justify-center md:my-16 ${
+      className={`flex justify-center md:my-16 my-8 ${
         reverse ? "md:flex-row-reverse" : ""
       }  flex-col items-center md:flex-row container   `}
     >

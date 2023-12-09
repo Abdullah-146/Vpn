@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MainLogo from "../assets/MainLogo.svg";
 import { NavLink, useLocation } from "react-router-dom";
+import HamburgerNav from "./HamburgerNav";
 
 function Nav() {
   const location = useLocation();
@@ -50,11 +51,13 @@ function Nav() {
         })}
       </div>
       <NavLink
-        className="py-5 px-8 flex justify-center items-center rounded-lg"
+        className="py-5 px-8 justify-center items-center rounded-lg hidden md:flex"
         to={`/Login`}
       >
-        <p className="font-heading text-primary text-xl ml-4">Register</p>
+        <p className="font-heading text-primary text-xl ml-4 ">Register</p>
+       
       </NavLink>
+      <HamburgerNav />
     </div>
   );
 }
