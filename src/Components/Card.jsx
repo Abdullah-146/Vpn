@@ -8,6 +8,7 @@ function Card({
   iconText = "Secure",
   line1 = "Use Social Medias",
   line2 = "Like A Cup of Tee",
+
   reverse = false,
   stars = true,
 }) {
