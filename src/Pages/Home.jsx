@@ -28,12 +28,13 @@ function Home() {
         <IconicComponent />
       </div>
 
-      <Card SVG={SVG} icon={icon} />
+      <Card SVG={SVG} icon={icon} content='Just as a well-crafted tea invigorates your senses, this VPN company seamlessly integrates robust privacy features with swift internet connectivity. Share your moments, connect, and explore without compromise as you bask in the comfort of a VPN that not only safeguards your digital footprint but also ensures a smooth and rapid online experience.' />
       <Card
         SVG={SVG2}
         reverse={true}
         line1="Protect Your Private"
         line2="Data And Information"
+        content='Shield your private data and information with our current VPN, a fortress for your online privacy. This cutting-edge VPN employs robust encryption protocols to ensure that your sensitive data remains confidential and secure from prying eyes. Whether you are conducting business transactions or sharing personal moments, rest easy knowing that your information is safeguarded. Take control of your digital privacy and enjoy peace of mind as you navigate the online world with our VPN protective shield. '
         iconText="Safe"
         icon={lock}
       />
@@ -43,6 +44,7 @@ function Home() {
         line1="Enjoy the Stable"
         line2="Connection And Ping"
         iconText="Safe"
+        content='Experience uninterrupted online activities as this VPN optimizes your network for a consistently smooth performance. Whether youare gaming, streaming, or engaging in video calls, relish the seamless connectivity that minimizes latency. Elevate your digital experience and bid farewell to disruptions – our VPN ensures a stable connection and minimal ping for a truly enjoyable online journey. '
         icon={stable}
       />
       <TextComponent />

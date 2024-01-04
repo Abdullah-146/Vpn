@@ -7,6 +7,7 @@ function CardBlur({
   iconText = "Secure",
   line1 = "Use Social Medias",
   line2 = "Like A Cup of Tee",
+  
   reverse = false,
   stars = true,
 }) {
@@ -56,9 +57,7 @@ function CardBlur({
         </h1>
 
         <p className="text-subHeading font-subHeading">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+        Just as a well-crafted tea invigorates your senses, this VPN company seamlessly integrates robust privacy features with swift internet connectivity. Share your moments, connect, and explore without compromise as you bask in the comfort of a VPN that not only safeguards your digital footprint but also ensures a smooth and rapid online experience.
         </p>
 
         <p className=" text-primary text-2xl  font-subHeading mt-5 flex  items-center cursor-pointer">

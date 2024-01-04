@@ -4,6 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Card({
   SVG,
   icon,
+  content,
   iconText = "Secure",
   line1 = "Use Social Medias",
   line2 = "Like A Cup of Tee",
@@ -44,9 +45,7 @@ function Card({
         </h1>
 
         <p className="text-subHeading font-subHeading">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+        {content}
         </p>
 
         <p className=" text-primary text-2xl  font-subHeading mt-5 flex  items-center cursor-pointer">
