@@ -23,9 +23,7 @@ const Footer = () => {
               </p>
             </div>
             <p className="font-simple text-simple w-3/4 text-center md:text-start">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim...
+            A cutting-edge service designed for lightning-fast and stable internet connections. With an unwavering commitment to speed, this VPN company ensures seamless browsing and streaming experiences for users.
             </p>
             <div className="flex flex-row items-center space-x-3">
               <img src={Instagram} alt="instagram" className="cursor-pointer" />

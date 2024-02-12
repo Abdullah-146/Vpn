@@ -42,9 +42,7 @@ function HomeComponent({
         </h1>
 
         <p className="text-subHeading font-subHeading">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+        A cutting-edge service designed for lightning-fast and stable internet connections. With an unwavering commitment to speed, this VPN company ensures seamless browsing and streaming experiences for users.
         </p>
 
         <img src={Download} alt="" className="w-96 h-52 cursor-pointer  " />
