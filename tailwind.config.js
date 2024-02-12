@@ -24,9 +24,9 @@ module.exports = {
         simple: "400",
       },
       fontFamily: {
-        heading: ["Maven Pro", "sans-serif"],
-        subHeading: ["Maven Pro", "sans-serif"],
-        simple: ["Maven Pro", "sans-serif"],
+        heading: ["ES Build TRIAL", "sans-serif"],
+        subHeading: ["ES Build TRIAL", "sans-serif"],
+        simple: ["ES Build TRIAL", "sans-serif"],
       },
       backgroundImage: {
         Footer: "url('/src/assets/FooterBackground.svg')",

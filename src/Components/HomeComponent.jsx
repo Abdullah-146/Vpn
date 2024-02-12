@@ -10,7 +10,7 @@ function HomeComponent({
   icon,
   iconText = "Surf clouds",
   line1 = "Current VPN",
-  line2 = " fast and stable",
+  line2 = " Fast And Stable",
   reverse = true,
   stars = false,
 }) {
@@ -19,7 +19,7 @@ function HomeComponent({
     <div
       className={`flex justify-center  ${
         reverse ? "md:flex-row-reverse " : ""
-      }  flex-col md:flex-row container mt-16 `}
+      }  flex-col md:flex-row container mt-16`}
     >
       <img
         src={SVG}
@@ -42,7 +42,9 @@ function HomeComponent({
         </h1>
 
         <p className="text-subHeading font-subHeading">
-        A cutting-edge service designed for lightning-fast and stable internet connections. With an unwavering commitment to speed, this VPN company ensures seamless browsing and streaming experiences for users.
+          A cutting-edge service designed for lightning-fast and stable internet
+          connections. With an unwavering commitment to speed, this VPN company
+          ensures seamless browsing and streaming experiences for users.
         </p>
 
         <img src={Download} alt="" className="w-96 h-52 cursor-pointer  " />
