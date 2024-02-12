@@ -3,6 +3,7 @@ import FreePlanA from "../assets/FreePlanA.svg";
 import ProPlanA from "../assets/ProPlanA.svg";
 import AdvancePlanA from "../assets/AdvancePlanA.svg";
 import Plan from "./Plan";
+import Save40 from "../assets/Save40.svg";
 
 function OurPlans() {
   const [toggle, setToggle] = React.useState(true);
@@ -16,9 +17,9 @@ function OurPlans() {
     line4: { text: "Connection And Ping", bool: false },
   });
   return (
-    <div className="container">
+    <div className="container relative">
       <div className="flex justify-center items-center w-full ">
-        <div className="border-2 bg-gradient-to-r py-1 px-1 rounded-3xl from-[#69cce263] to-[#8ef0e83a] flex space-x-2">
+        <div className="border-2 bg-gradient-to-r py-1 px-1 rounded-3xl from-[#69cce263] to-[#8ef0e83a] flex space-x-2 ml-0 md:ml-64">
           <div
             className={` py-3 rounded-3xl  px-8   `}
             style={{
@@ -53,6 +54,9 @@ function OurPlans() {
               Yearly
             </p>
           </div>
+        </div>
+        <div className="ml-20 hidden md:block">
+          <img src={Save40} alt="" className="" />
         </div>
       </div>
 
