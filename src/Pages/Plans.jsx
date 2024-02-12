@@ -34,12 +34,12 @@ import OurPlans from "../Components/OurPlans";
 
 function Services() {
   return (
-    <div className="bg-gradient-to-r from-[#d1ffff1A] to-white    ">
-      <img
+    <div className="bg-gradient-to-r from-[#d1ffff1A] to-[#fafbfc]    ">
+      {/* <img
         src={PlansBg}
         alt=""
         className="absolute top-0 left-0 w-full h-full object-cover -z-10 "
-      />
+      /> */}
       <Nav />
 
       <PlansComponent
@@ -47,9 +47,9 @@ function Services() {
         Heading={"Join To Premium Members"}
         subHeading={"Our Plans"}
       />
+      <OurPlans />
 
       <PlansTable />
-      <OurPlans />
 
       <DynamicText
         icon={Planet}
