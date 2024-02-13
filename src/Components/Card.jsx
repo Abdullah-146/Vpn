@@ -14,7 +14,7 @@ function Card({
 }) {
   return (
     <div
-      className={`flex justify-center md:my-16 ${
+      className={`flex justify-center my-16 ${
         reverse ? "md:flex-row-reverse" : ""
       }  flex-col md:flex-row container   `}
     >
@@ -45,9 +45,7 @@ function Card({
           {line1} <br /> {line2}
         </h1>
 
-        <p className="text-subHeading font-subHeading">
-        {content}
-        </p>
+        <p className="text-subHeading font-subHeading">{content}</p>
 
         <p className=" text-primary text-2xl  font-subHeading mt-5 flex  items-center cursor-pointer">
           Know More

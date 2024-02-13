@@ -18,6 +18,19 @@
   width: 100%;
 }
 
+.icon-slider-container {
+  overflow: hidden;
+}
+
+.icon-slider {
+  display: flex;
+  transition: transform 0.5s ease; /* Adjust transition duration and easing as needed */
+}
+
+.icon-slider img {
+  width: 110px; /* Adjust width as needed */
+}
+
 /* ///////////////////// */
 
 @media only screen and (min-width: 320px) {
@@ -31,6 +44,8 @@
   }
   .bgg {
     background-image: none;
+    height: auto;
+    width: auto;
   }
 }
 /* Small devices (Landscape tablets and large phones, 600px and up) */
