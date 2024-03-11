@@ -58,7 +58,9 @@ function Home() {
         icon={stable}
       />
       <TextComponent />
+
       <Slider />
+
       <SliderReverse />
       <div className="flex-1 flex w-full items-center flex-col md:flex-row space-y-4 md:space-y-0 my-4">
         <div className="flex-1">
@@ -70,7 +72,7 @@ function Home() {
             icon={stable}
           />
         </div>
-        <div className="flex-1">
+        <div className="ComponentBg relative">
           <CommentSlider
             comments={[
               {

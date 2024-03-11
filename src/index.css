@@ -17,6 +17,14 @@
   height: 104vh;
   width: 100%;
 }
+.ComponentBg {
+  background-image: url("./assets/ComponentBg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 55%;
+}
 
 .icon-slider-container {
   overflow: hidden;
@@ -43,6 +51,11 @@
     font-size: 14px;
   }
   .bgg {
+    background-image: none;
+    height: auto;
+    width: auto;
+  }
+  .ComponentBg {
     background-image: none;
     height: auto;
     width: auto;
