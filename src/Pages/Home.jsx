@@ -3,7 +3,7 @@ import Card from "../Components/Card";
 import SVG from "../assets/SVG1.svg";
 import SVG2 from "../assets/SVG2.svg";
 import SVG3 from "../assets/SVG3.svg";
-import HomeSVG from "../assets/HomeSVG.svg";
+import HomeSVG from "../assets/HomeSvg.svg";
 import icon from "../assets/icon1.svg";
 import lock from "../assets/lock.svg";
 import stable from "../assets/stable.svg";
@@ -58,9 +58,7 @@ function Home() {
         icon={stable}
       />
       <TextComponent />
-
       <Slider />
-
       <SliderReverse />
       <div className="flex-1 flex w-full items-center flex-col md:flex-row space-y-4 md:space-y-0 my-4">
         <div className="flex-1">
@@ -72,7 +70,7 @@ function Home() {
             icon={stable}
           />
         </div>
-        <div className="ComponentBg relative">
+        <div className="flex-1">
           <CommentSlider
             comments={[
               {

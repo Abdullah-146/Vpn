@@ -18,7 +18,7 @@ import SliderReverse from "../Components/SliderReverse";
 import CommentSlider from "../Components/CommentSlider";
 import MainSvg from "../assets/MainSvg";
 import DynamicText from "../Components/DynamicText";
-import Rocket from "../assets/rocket.svg";
+import Rocket from "../assets/Rocket.svg";
 import ServicesComponent from "../Components/ServicesComponent";
 import SuperImage from "../assets/SuperImage.svg";
 import Boxes from "../Components/Boxes";
