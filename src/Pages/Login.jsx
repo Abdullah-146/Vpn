@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LoginSvg from "../assets/LoginSvg.svg";
 import InputField from "../Components/InputField";
@@ -12,10 +12,37 @@ import icons2 from "../assets/Icons2.svg";
 import icons3 from "../assets/Icons3.svg";
 import icons4 from "../assets/Icons4.svg";
 import { Link, useNavigate } from "react-router-dom";
+import { isBrowser, isMobile, browserName } from "react-device-detect";
+import { useDispatch } from "react-redux";
+import { userLogin } from "../Redux/slice/user/userAction";
 
 function Login() {
   const navigate = useNavigate();
   const Icons = [iconss, icons2, icons3, icons4];
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
+  const dispatch = useDispatch();
+
+  const handleLogin = () => {
+    let device = {};
+    device.id = " ";
+    device.name = browserName;
+    device.build = " ";
+    device.model = " ";
+    device.lastLoggedIn = new Date().toISOString();
+
+    dispatch(
+      userLogin({ email: data.email, password: data.password, device })
+    ).then((res) => {
+      console.log(res);
+      if (userLogin.fulfilled.match(res)) {
+        navigate("/Home");
+      }
+    });
+  };
+
   return (
     <div className="h-screen w-screen bg-gradient-to-r from-[#c4e9f974] to-white pt-8 overflow-hidden flex flex-col justify-between">
       <div>
@@ -48,8 +75,16 @@ function Login() {
                   type="text"
                   placeholder="Email"
                   Icon={PersonOutlineIcon}
+                  onChange={(e) => setData({ ...data, email: e.target.value })}
                 />
-                <InputField type="password" text="Password" Icon={key} />
+                <InputField
+                  type="password"
+                  text="Password"
+                  Icon={key}
+                  onChange={(e) =>
+                    setData({ ...data, password: e.target.value })
+                  }
+                />
               </div>
               {/* terms and conditions */}
               <div className="flex justify-between w-[90%]  md:w-[50%]">
@@ -66,7 +101,7 @@ function Login() {
               {/* terms and conditions out */}
 
               <div className="w-[90%]  md:w-[50%]">
-                <Button />
+                <Button text="Login" onClick={handleLogin} />
               </div>
 
               <div className="flex  items-center mt-5">

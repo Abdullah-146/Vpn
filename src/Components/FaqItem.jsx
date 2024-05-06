@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const FaqItem = () => {
+const FaqItem = ({ question, answer }) => {
   const [selected, setSelected] = useState(false);
 
-  const handleClick = ()=> {
+  const handleClick = () => {
     setSelected(!selected);
-  }
+  };
 
   return (
-    <div 
-    
-    onClick={handleClick} className="w-full flex flex-row ">
+    <div onClick={handleClick} className="w-full flex flex-row ">
       <div
         className={`w-2 h-8 self-center rounded-l-md ${
           selected ? "bg-bluish" : "bg-transparent"
@@ -22,16 +20,16 @@ const FaqItem = () => {
         <div className="flex-1 flex flex-row items-center justify-between">
           <div className="flex flex-row items-center justify-center space-x-5">
             <p className="font-subHeading text-[#0A7AF9]">1</p>
-            <p className="font-subHeading text-simple ">
-              how can i use the vpn?
-            </p>
+            <p className="font-subHeading text-simple ">{question}</p>
           </div>
-            {selected ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          {selected ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
         </div>
-        <div className={`${selected ? "flex" : "hidden"} flex transition-all ease-in-out`}>
-          <p className="text-simple font-simple">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          </p>
+        <div
+          className={`${
+            selected ? "flex" : "hidden"
+          } flex transition-all ease-in-out`}
+        >
+          <p className="text-simple font-simple">{answer}</p>
         </div>
       </div>
     </div>

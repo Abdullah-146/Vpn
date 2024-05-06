@@ -3,7 +3,7 @@ import "../Css/sliderReverse.css";
 
 import shield from "../assets/shield.svg";
 import planet from "../assets/planet.svg";
-import Rocket from "../assets/Rocket.js";
+import Rocket from "../assets/Rocket.svg";
 import emojihappy from "../assets/emojihappy.svg";
 
 function SlidingComponent({ icon }) {

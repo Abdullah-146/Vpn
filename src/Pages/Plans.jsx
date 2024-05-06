@@ -1,38 +1,21 @@
 import React from "react";
 import Card from "../Components/Card";
-import SVG from "../assets/SVG1.svg";
-import SVG2 from "../assets/SVG2.svg";
-import SVG3 from "../assets/SVG3.svg";
-import HomeSVG from "../assets/FeaturesMain.svg";
-import icon from "../assets/icon1.svg";
-import lock from "../assets/lock.svg";
 import stable from "../assets/stable.svg";
-import HomeComponent from "../Components/HomeComponent";
 import Nav from "../Components/Nav";
 import FaqBox from "../Components/FaqBox";
 import Footer from "../Components/Footer";
-import IconicComponent from "../Components/IconicComponent";
-import TextComponent from "../Components/TextComponent";
-import Slider from "../Components/Slider";
-import SliderReverse from "../Components/SliderReverse";
 import CommentSlider from "../Components/CommentSlider";
-import MainSvg from "../assets/MainSvg";
 import DynamicText from "../Components/DynamicText";
-import Rocket from "../assets/Rocket.js";
-import ServicesComponent from "../Components/ServicesComponent";
-import SuperImage from "../assets/SuperImage.svg";
-import Boxes from "../Components/Boxes";
 import Planet from "../assets/planet.svg";
 import CardSlider from "../Components/CardSlider";
 import CardBlur from "../Components/CardBlur";
 import AboutUsSVG from "../assets/AboutUsSvg.svg";
 import icon3 from "../assets/chart-column.svg";
-import PlansBg from "../assets/PlansBg.svg";
 import PlansComponent from "../Components/PlansComponent";
 import PlansTable from "../Components/PlansTable";
 import OurPlans from "../Components/OurPlans";
 
-function Services() {
+function Plans() {
   return (
     <div className="bg-gradient-to-r from-[#d1ffff1A] to-[#fafbfc]    ">
       {/* <img
@@ -104,4 +87,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Plans;
