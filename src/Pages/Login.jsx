@@ -15,6 +15,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { isBrowser, isMobile, browserName } from "react-device-detect";
 import { useDispatch } from "react-redux";
 import { userLogin } from "../Redux/slice/user/userAction";
+import { toast } from "react-toastify";
 
 function Login() {
   const navigate = useNavigate();
@@ -30,15 +31,19 @@ function Login() {
     device.id = " ";
     device.name = browserName;
     device.build = " ";
-    device.model = " ";
+    device.model = isMobile ? "Mobile" : isBrowser ? "Browser" : "Desktop";
     device.lastLoggedIn = new Date().toISOString();
+
+    console.log("====================================");
+    console.log(data, "<-----------------data");
+    console.log("====================================");
 
     dispatch(
       userLogin({ email: data.email, password: data.password, device })
     ).then((res) => {
       console.log(res);
       if (userLogin.fulfilled.match(res)) {
-        navigate("/Home");
+        navigate("/");
       }
     });
   };
@@ -61,7 +66,7 @@ function Login() {
           </div>
           {/* All login Fields in */}
           <div className="flex flex-col w-full  text-center items-center   ">
-            <h1 className="text-4xl font-medium text-primary flex">
+            <h1 className="text-4xl font-medium text-primary">
               <span>Login In Your&nbsp;</span>
               <span className="font-heading">Account!</span>
             </h1>

@@ -12,10 +12,11 @@ import Services from "./Pages/Services";
 import Plans from "./Pages/Plans";
 import CommingSoon from "./Pages/CommingSoon";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { Provider, useDispatch, useSelector } from "react-redux";
 import store from "./Redux/store";
 
-import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 import { getAllFaqs } from "./Redux/slice/faq/faqAction";
 
