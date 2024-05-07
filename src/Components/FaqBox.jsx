@@ -10,6 +10,8 @@ const FaqBox = () => {
     error: faqsError,
   } = useSelector((state) => state.faq);
 
+  console.log(faqs, "<-----------------faqs");
+
   return (
     <div className="flex-1 flex flex-col container">
       <div className="flex flex-row items-center justify-center space-x-4">

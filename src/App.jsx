@@ -57,11 +57,8 @@ function Wrapper() {
   } = useSelector((state) => state.faq);
 
   useEffect(() => {
-    if (userInfo._id) {
-      if (!faqLoading && faqs.length == 0) {
-        console.log("fetching faqs");
-        dispatch(getAllFaqs());
-      }
+    if (!faqLoading && faqs.length == 0) {
+      dispatch(getAllFaqs());
     }
   }, [userInfo._id]);
 

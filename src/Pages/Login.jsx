@@ -34,10 +34,6 @@ function Login() {
     device.model = isMobile ? "Mobile" : isBrowser ? "Browser" : "Desktop";
     device.lastLoggedIn = new Date().toISOString();
 
-    console.log("====================================");
-    console.log(data, "<-----------------data");
-    console.log("====================================");
-
     dispatch(
       userLogin({ email: data.email, password: data.password, device })
     ).then((res) => {

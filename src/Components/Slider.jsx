@@ -21,25 +21,25 @@ function SlidingComponent({ icon }) {
 }
 
 function Slider() {
-  const [icons, setIcons] = useState([
-    shield,
-    planet,
-    Rocket,
-    emojihappy,
-    shield,
-    planet,
-    Rocket,
-    emojihappy,
+  const [sliderItems, setIcons] = useState([
+    { icon: shield, text: "Peace & Secure" },
+    { icon: planet, text: "Beutiful Ui Design" },
+    { icon: Rocket, text: "Fast & Secure" },
+    { icon: emojihappy, text: "Beutiful Ui Design" },
+
+    { icon: shield, text: "Peace & Secure" },
+    { icon: planet, text: "Beutiful Ui Design" },
+    { icon: Rocket, text: "Fast & Secure" },
+    { icon: emojihappy, text: "Nice Quality In Use" },
   ]);
   return (
-    <div className="logos mt-5">
+    <div className="logos mb-5">
       <div className=" flex  logos-slide space-x-20  ">
-        {icons.map((icon, index) => {
-          return <SlidingComponent icon={icon} />;
+        {sliderItems.map(({ icon, text }, index) => {
+          return <SlidingComponent icon={icon} text={text} />;
         })}
       </div>
     </div>
   );
 }
-
 export default Slider;

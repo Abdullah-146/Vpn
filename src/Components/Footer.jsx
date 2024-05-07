@@ -3,7 +3,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import MainLogo from "../assets/MainLogo.svg";
 import Instagram from "../assets/Instagram.svg";
 import Twitter from "../assets/Twitter.svg";
-import Youtube from "../assets/Youtube.svg";
+import Discord from "../assets/Discord.svg";
 import Facebook from "../assets/Facebook.svg";
 import StarPurple500Icon from "@mui/icons-material/StarPurple500";
 
@@ -23,13 +23,49 @@ const Footer = () => {
               </p>
             </div>
             <p className="font-simple text-simple w-3/4 text-center md:text-start">
-            A cutting-edge service designed for lightning-fast and stable internet connections. With an unwavering commitment to speed, this VPN company ensures seamless browsing and streaming experiences for users.
+              A cutting-edge service designed for lightning-fast and stable
+              internet connections. With an unwavering commitment to speed, this
+              VPN company ensures seamless browsing and streaming experiences
+              for users.
             </p>
             <div className="flex flex-row items-center space-x-3">
-              <img src={Instagram} alt="instagram" className="cursor-pointer" />
-              <img src={Twitter} alt="twitter" className="cursor-pointer" />
-              <img src={Youtube} alt="youtube" className="cursor-pointer" />
-              <img src={Facebook} alt="facebook" className="cursor-pointer" />
+              <a
+                href="https://www.instagram.com/currentvpnofficial?igsh=MTl1aW5qZ3NhcWV4NQ%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-row items-center space-x-3"
+              >
+                <img
+                  src={Instagram}
+                  alt="instagram"
+                  className="cursor-pointer"
+                />
+              </a>
+
+              <a
+                href="http://Facebook.com/currentvpn"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-row items-center space-x-3"
+              >
+                <img src={Twitter} alt="twitter" className="cursor-pointer" />
+              </a>
+              <a
+                href="https://discord.gg/Rbh6PJSn"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-row items-center space-x-3"
+              >
+                <img src={Discord} alt="youtube" className="cursor-pointer" />
+              </a>
+              <a
+                href="http://Facebook.com/currentvpn"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-row items-center space-x-3"
+              >
+                <img src={Facebook} alt="facebook" className="cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>
