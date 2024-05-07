@@ -47,7 +47,7 @@ function Slider() {
           x: ["100%", "0%"],
           transition: {
             ease: "linear",
-            duration: 10,
+            duration: 15,
             repeat: Infinity,
           },
         }}
