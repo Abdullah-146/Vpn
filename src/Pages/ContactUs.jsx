@@ -10,10 +10,11 @@ import ContactUsComponent from "../Components/ContactUsComponent";
 import FaqIcon from "../Svgs/FaqIcon";
 import ContactUsSvg from "../assets/ContactUsSvg.svg";
 import MessengerSvg from "../assets/messanger.svg";
+import Share from "../assets/Share";
 
 function ContactUs() {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-[#c4e9f974] to-white">
       <Nav />
 
       <ContactUsComponent
@@ -23,11 +24,11 @@ function ContactUs() {
         line1="Send A Message!"
         line2=" "
       />
-      <div className="flex flex-row items-center justify-center space-x-4">
-        <FaqIcon />
-        <p className="font-subHeading text-simple">Your Questions</p>
+      <div className="flex flex-row items-center justify-center space-x-4 mt-10">
+        <Share />
+        <p className="font-subHeading text-simple">Connect With Us</p>
       </div>
-      <p className="font-heading text-heading text-center">FAQ</p>
+      <p className="font-heading text-heading text-center">Contact Us..!</p>
 
       <Card
         SVG={SVG}

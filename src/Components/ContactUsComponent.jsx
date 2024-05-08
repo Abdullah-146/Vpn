@@ -28,7 +28,7 @@ function ContactUsComponent({
   });
   return (
     <div
-      className={`flex justify-center  ${
+      className={`flex justify-center   ${
         reverse ? "md:flex-row-reverse " : ""
       }  flex-col md:flex-row container mt-16`}
       style={{ paddingRight: 0, marginRight: 0 }}
@@ -36,16 +36,16 @@ function ContactUsComponent({
       <img
         src={SVG}
         alt="computer guy"
-        className="max-h-[500px] "
+        className="max-h-[500px] md:mt-14 "
         style={{
           objectFit: "contain",
           // drop shadow
-          filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4)",
+          filter: "drop-shadow(10px 20px 20px rgba(0, 0, 0, 0.4)",
           marginLeft: 200,
         }}
       />
       {/* entire second div */}
-      <div className="flex flex-col text-start  flex-1 max-w-full md:min-w-[50%] ">
+      <div className="flex flex-col text-start md:space-y-3  flex-1 max-w-full md:min-w-[50%] ">
         <div className="flex justify-between    ">
           <h1 className="text-2xl font-bold text-simple text-start flex">
             <span>
@@ -66,6 +66,10 @@ function ContactUsComponent({
               placeholder="First Name"
               Icon={PersonOutlineIcon}
               onChange={(e) => setData({ ...data, firstName: e.target.value })}
+              style={{
+                paddingTop: "0.75rem",
+                paddingBottom: "0.75rem",
+              }}
             />
             <InputField
               type="text"
@@ -73,6 +77,10 @@ function ContactUsComponent({
               text="Subject"
               Icon={bulb}
               onChange={(e) => setData({ ...data, subject: e.target.value })}
+              style={{
+                paddingTop: "0.75rem",
+                paddingBottom: "0.75rem",
+              }}
             />
           </div>
           <InputField
@@ -82,9 +90,10 @@ function ContactUsComponent({
             onChange={(e) => setData({ ...data, email: e.target.value })}
           />
           <textarea
-            className="w-full h-40 border-2 border-[#E0E0E0] rounded-lg p-2"
-            placeholder="Message"
+            className="w-full h-24 max-h-24 min-h-24 border-2 border-[#A1CDFF] bg-white rounded-full px-5 outline-none py-3 focus:border-[#A1CDFF] "
+            placeholder="🖊️ Message"
             onChange={(e) => setData({ ...data, message: e.target.value })}
+            // On Focus border color set to #0A7AF9
           ></textarea>
           <Button
             text="Send Message"
