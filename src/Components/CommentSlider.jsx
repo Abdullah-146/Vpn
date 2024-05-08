@@ -51,15 +51,12 @@ const CommentSlider = ({ comments }) => {
         className="flex flex-row overflow-hidden w-20 h-20 rounded-full"
       >
         {comments.map((item, index) => (
-          <div
-            key={index.toString()}
-            className="min-w-full rounded-full  bg-white "
-          >
+          <div key={index.toString()} className="min-w-full rounded-full   ">
             <img src={item.avatar} alt="" />
           </div>
         ))}
       </div>
-      <div className="rounded-md w-full flex-1 flex flex-col items-center bg-white">
+      <div className="rounded-md w-full flex-1 flex flex-col items-center ">
         <div className="w-full flex items-center justify-between  px-10 py-3">
           <LeftComma />
           <RightComma />
@@ -92,12 +89,12 @@ const CommentSlider = ({ comments }) => {
       <KeyboardArrowLeftIcon
         onClick={onClickLeft}
         sx={{ backgroundColor: "blue", color: "white", fontSize: 30 }}
-        className="absolute  top-1/2 left-10 w-10 h-10 bg-white rounded-full"
+        className="absolute  top-1/2 left-10 w-10 h-10  rounded-full"
       />
       <KeyboardArrowRightIcon
         onClick={onClickRight}
         sx={{ backgroundColor: "blue", color: "white", fontSize: 30 }}
-        className="absolute top-1/2 right-10 w-10 h-10 bg-white rounded-full"
+        className="absolute top-1/2 right-10 w-10 h-10  rounded-full"
       />
     </div>
   );
