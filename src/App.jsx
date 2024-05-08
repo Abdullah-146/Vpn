@@ -19,6 +19,7 @@ import store from "./Redux/store";
 
 import { useEffect } from "react";
 import { getAllFaqs } from "./Redux/slice/faq/faqAction";
+import ContactUs from "./Pages/ContactUs";
 
 export default function App() {
   return (
@@ -72,8 +73,9 @@ function Wrapper() {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Register" element={<Register />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
-          <Route path="/Services" element={<Services />}></Route>
+          <Route path="/Features" element={<Services />}></Route>
           <Route path="/Plans" element={<Plans />}></Route>
+          <Route path="/ContactUs" element={<ContactUs />}></Route>
           <Route path="/ThankYou" element={<CommingSoon />}></Route>
 
           {/* Invalid url */}

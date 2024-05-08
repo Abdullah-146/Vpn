@@ -5,7 +5,13 @@ import HamburgerNav from "./HamburgerNav";
 
 function Nav() {
   const location = useLocation();
-  const [links, setLinks] = useState(["Home", "AboutUs", "Services", "Plans"]);
+  const [links, setLinks] = useState([
+    "Home",
+    "AboutUs",
+    "Features",
+    "Plans",
+    "ContactUs",
+  ]);
   const [selectedLink, setSelectedLink] = useState("Home");
 
   const [hoverLink, setHoverLink] = useState("");
@@ -54,11 +60,15 @@ function Nav() {
         className="py-5 px-8 justify-center items-center rounded-lg hidden md:flex"
         to={`/Login`}
       >
-        <p className="font-heading text-white text-xl ml-4  py-2 rounded-full px-10" style={{
-        background:
-          "linear-gradient(80deg, #4ECAFF 0%, #0071FF 50%, #0066E7 100%)",
-      }}>Register</p>
-       
+        <p
+          className="font-heading text-white text-xl ml-4  py-2 rounded-full px-10"
+          style={{
+            background:
+              "linear-gradient(80deg, #4ECAFF 0%, #0071FF 50%, #0066E7 100%)",
+          }}
+        >
+          Register
+        </p>
       </NavLink>
       <HamburgerNav />
     </div>
