@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import "../Css/slider.css";
-
 import shield from "../assets/shield.svg";
 import planet from "../assets/planet.svg";
 import Rocket from "../assets/Rocket.svg";
@@ -10,7 +8,7 @@ import { motion } from "framer-motion";
 function SlidingComponent({ icon, text }) {
   return (
     <div
-      className="flex justify-center items-center bg-[#66778D12]   border-2 w-auto h-20 rounded-3xl px-10  "
+      className="flex justify-center items-center bg-[#66778D12] border-2 w-auto h-20 rounded-3xl px-10"
       style={{ backgroundColor: "white" }}
     >
       <img src={icon} alt="" className="w-10" />
@@ -22,18 +20,26 @@ function SlidingComponent({ icon, text }) {
 }
 
 function Slider() {
-  const [sliderItems, setIcons] = useState([
+  const [sliderItems] = useState([
     { icon: shield, text: "Peace & Secure" },
-    { icon: planet, text: "Beutiful Ui Design" },
+    { icon: planet, text: "Beautiful UI Design" },
     { icon: Rocket, text: "Fast & Secure" },
-    { icon: emojihappy, text: "Beutiful Ui Design" },
-
+    { icon: emojihappy, text: "Beautiful UI Design" },
     { icon: shield, text: "Peace & Secure" },
-    { icon: planet, text: "Beutiful Ui Design" },
+    { icon: planet, text: "Beautiful UI Design" },
     { icon: Rocket, text: "Fast & Secure" },
     { icon: emojihappy, text: "Nice Quality In Use" },
   ]);
-  const duplicatedSlides = [...sliderItems, ...sliderItems];
+  const duplicatedSlides = [
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+  ];
 
   return (
     <div
@@ -44,10 +50,10 @@ function Slider() {
       <motion.div
         className="flex"
         animate={{
-          x: ["100%", "0%"],
+          x: ["0%", "-2000%"],
           transition: {
             ease: "linear",
-            duration: 15,
+            duration: 500,
             repeat: Infinity,
           },
         }}
@@ -55,8 +61,7 @@ function Slider() {
         {duplicatedSlides.map((slide, index) => (
           <div
             key={index}
-            className="flex justify-center items-center    w-auto h-20 rounded-3xl px-3"
-            // style={{ width: `${100 / sliderItems.length}%` }}
+            className="flex justify-center items-center w-auto h-20 rounded-3xl px-3"
           >
             <SlidingComponent icon={slide.icon} text={slide.text} />
           </div>
@@ -65,4 +70,5 @@ function Slider() {
     </div>
   );
 }
+
 export default Slider;

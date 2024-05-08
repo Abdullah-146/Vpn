@@ -33,7 +33,16 @@ function Slider() {
     { icon: Rocket, text: "Fast & Secure" },
     { icon: emojihappy, text: "Nice Quality In Use" },
   ]);
-  const duplicatedSlides = [...sliderItems, ...sliderItems];
+  const duplicatedSlides = [
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+    ...sliderItems,
+  ];
 
   return (
     <div
@@ -44,10 +53,10 @@ function Slider() {
       <motion.div
         className="flex"
         animate={{
-          x: ["0%", "100%"],
+          x: ["-1000%", "1000%"],
           transition: {
             ease: "linear",
-            duration: 15,
+            duration: 500,
             repeat: Infinity,
           },
         }}
