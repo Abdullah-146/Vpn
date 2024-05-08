@@ -56,7 +56,7 @@ const CommentSlider = ({ comments }) => {
           </div>
         ))}
       </div>
-      <div className="rounded-md w-full flex-1 flex flex-col items-center ">
+      <div className="rounded-md  flex-1 flex flex-col items-center w-[75%] ">
         <div className="w-full flex items-center justify-between  px-10 py-3">
           <LeftComma />
           <RightComma />
