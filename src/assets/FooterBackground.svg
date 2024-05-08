@@ -5,7 +5,7 @@
 <path d="M1 374.728V842H1439V374.728C1248.74 353.416 1057.78 340.59 866.675 336.249C846.832 335.798 828.127 328.125 809.894 318.855C804.1 315.909 798.363 312.808 792.65 309.72C780.313 303.051 768.087 296.442 755.637 291.586C744.802 287.36 732.73 285 720 285C707.27 285 695.198 287.36 684.363 291.586C671.913 296.442 659.687 303.051 647.35 309.72C641.637 312.808 635.9 315.909 630.106 318.855C611.873 328.125 593.168 335.798 573.325 336.249C382.223 340.59 191.263 353.416 1 374.728Z" stroke="url(#paint1_radial_786_3755)" stroke-opacity="0.16" stroke-width="2"/>
 </g>
 <defs>
-<filter id="filter0_d_786_3755" x="-240" y="0" width="1920" height="1039" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_786_3755" x="-240" y="-10" width="2500" height="425" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="-44"/>
@@ -16,12 +16,12 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_786_3755" result="shape"/>
 </filter>
 <radialGradient id="paint0_radial_786_3755" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(795.001 858.96) rotate(-101.822) scale(366.09 735.148)">
-<stop stop-color="#0A7AF9"/>
-<stop offset="1" stop-color="#0A7AF9" stop-opacity="0"/>
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="paint1_radial_786_3755" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(681 500.635) rotate(91.0227) scale(224.115 449.695)">
-<stop stop-color="#0A7AF9"/>
-<stop offset="1" stop-color="#0A7AF9" stop-opacity="0"/>
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>

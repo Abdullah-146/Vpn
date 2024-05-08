@@ -53,10 +53,10 @@ function Slider() {
       <motion.div
         className="flex"
         animate={{
-          x: ["-1000%", "1000%"],
+          x: ["-1000%", "0%"],
           transition: {
             ease: "linear",
-            duration: 500,
+            duration: 350,
             repeat: Infinity,
           },
         }}
