@@ -28,20 +28,19 @@ function ContactUsComponent({
   });
   return (
     <div
-      className={`flex justify-center   ${
-        reverse ? "md:flex-row-reverse " : ""
-      }  flex-col md:flex-row container mt-16`}
+      className={`flex justify-center items-center flex-col   ${
+        reverse ? "lg:flex-row-reverse " : ""
+      }  flex-col lg:flex-row container mt-16  `}
       style={{ paddingRight: 0, marginRight: 0 }}
     >
       <img
         src={SVG}
         alt="computer guy"
-        className="max-h-[500px] md:mt-14 "
+        className="max-h-[500px] md:mt-14 flex-1  lg:ml-52"
         style={{
           objectFit: "contain",
           // drop shadow
           filter: "drop-shadow(10px 20px 20px rgba(0, 0, 0, 0.4)",
-          marginLeft: 200,
         }}
       />
       {/* entire second div */}

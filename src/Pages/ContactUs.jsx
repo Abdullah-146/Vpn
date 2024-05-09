@@ -11,6 +11,7 @@ import MessengerSvg from "../assets/messanger.svg";
 import ContactUsComponent from "../Components/ContactUsComponent";
 
 import Share from "../assets/Share";
+import ContactUsIconic from "../Components/ContactUsIconic";
 
 function ContactUs() {
   return (
@@ -29,6 +30,7 @@ function ContactUs() {
         <p className="font-subHeading text-simple">Connect With Us</p>
       </div>
       <p className="font-heading text-heading text-center">Contact Us..!</p>
+      <ContactUsIconic />
 
       <Card
         SVG={ContactUsCard}
