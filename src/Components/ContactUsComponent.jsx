@@ -36,7 +36,7 @@ function ContactUsComponent({
       <img
         src={SVG}
         alt="computer guy"
-        className="max-h-[500px] md:mt-14 flex-1  lg:ml-52"
+        className="max-h-[500px] md:mt-14 flex-1  xl:ml-52"
         style={{
           objectFit: "contain",
           // drop shadow

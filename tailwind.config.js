@@ -34,5 +34,15 @@ module.exports = {
         comment: "url('/src/assets/Comment.svg')",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      // You can define additional screen sizes as needed
+    },
+    backgroundSize: {
+      "auto-100%": "100% 100%",
+    },
   },
 };

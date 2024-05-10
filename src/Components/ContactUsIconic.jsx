@@ -8,8 +8,8 @@ function ContactUsIconic() {
   const items = [
     {
       title: "Phone Numbers",
-      para: "+1-123-456-7890",
-      para2: "+1-123-456-7890",
+      para: "+1 843 848 98",
+      para2: "+6 848 3422",
       svg: PhoneNumbers,
       color: "#E7F6FC",
     },
@@ -22,8 +22,8 @@ function ContactUsIconic() {
     },
     {
       title: "Contact",
-      para: "abd@gmail.com",
-      para2: "Chat: +1-123-456-7890",
+      para: "Support@currentvpn.io",
+      para2: "Chat: +1 843 848 98",
       svg: Contact,
       color: "#FBFEFF",
     },
