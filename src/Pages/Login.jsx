@@ -88,7 +88,7 @@ function Login() {
                 />
               </div>
               {/* terms and conditions */}
-              <div className="flex justify-between w-[90%]  md:w-[50%]">
+              {/* <div className="flex justify-between w-[90%]  md:w-[50%]">
                 <div className="flex  items-center">
                   <div className="bg-[#0A7AF9] p-[2px] rounded-full  ">
                     <DoneIcon sx={{ color: "white", fontSize: 25 }} />
@@ -98,7 +98,7 @@ function Login() {
                   </p>
                 </div>
                 <p className="text-[#0A7AF9] font-bold  ">Forgot Password? </p>
-              </div>
+              </div> */}
               {/* terms and conditions out */}
 
               <div className="w-[90%]  md:w-[50%]">
