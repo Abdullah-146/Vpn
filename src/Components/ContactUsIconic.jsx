@@ -4,6 +4,7 @@ import CurvedItem from "./CurvedItem";
 import PhoneNumbers from "../assets/PhoneNumbers.svg";
 import Location from "../assets/Location.svg";
 import Contact from "../assets/Contact.svg";
+import { color } from "framer-motion";
 function ContactUsIconic() {
   const items = [
     {
@@ -12,6 +13,7 @@ function ContactUsIconic() {
       para2: "+6 848 3422",
       svg: PhoneNumbers,
       color: "#E7F6FC",
+      color2: "#EDF8FD",
     },
     {
       title: "Location",
@@ -19,13 +21,15 @@ function ContactUsIconic() {
       para2: "Street, New York",
       svg: Location,
       color: "#F3FAFE",
+      color2: "#F3FBFE",
     },
     {
       title: "Contact",
       para: "Support@currentvpn.io",
       para2: "Chat: +1 843 848 98",
       svg: Contact,
-      color: "#FBFEFF",
+      color: "#F7FCFF",
+      color2: "#FCFEFE",
     },
   ];
   return (

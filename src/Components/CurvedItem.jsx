@@ -1,6 +1,6 @@
 import React from "react";
 
-function CurvedItem({ title, para, para2, svg, color }) {
+function CurvedItem({ title, para, para2, svg, color, color2 }) {
   return (
     <div className=" rounded-lg relative justify-center overflow-y-visible max-w-[400px] min-w-[400px]">
       <img
