@@ -60,7 +60,7 @@ function Plans() {
             icon={stable}
           />
         </div>
-        <div className="flex-1">
+        <div className=" ComponentBg relative ">
           <CommentSlider
             comments={[
               {
