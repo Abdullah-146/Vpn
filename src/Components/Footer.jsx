@@ -6,6 +6,7 @@ import Twitter from "../assets/Twitter.svg";
 import Discord from "../assets/Discord.svg";
 import Facebook from "../assets/Facebook.svg";
 import StarPurple500Icon from "@mui/icons-material/StarPurple500";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -113,12 +114,19 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-3">
             <p className="font-heading text-heading">Help</p>
-            <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
+            <p
+              className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer"
+              onClick={() => {
+                window.location.href = "mailto:Support@currentvpn.io";
+              }}
+            >
               Support
             </p>
-            <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
-              Contact Us
-            </p>
+            <NavLink to="/ContactUs">
+              <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
+                Contact Us
+              </p>
+            </NavLink>
             <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
               Business VPN
             </p>

@@ -20,7 +20,12 @@ const FaqBox = () => {
       <div className="flex-1 flex flex-col space-y-4 p-4">
         {faqs.map((faq, index) => {
           return (
-            <FaqItem key={index} question={faq.question} answer={faq.answer} />
+            <FaqItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              index={index}
+            />
           );
         })}
       </div>

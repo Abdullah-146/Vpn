@@ -30,8 +30,8 @@ function AboutUs() {
         SVG={AboutUsMainSvg}
         icon={planet}
         iconText="Know more about this platform"
-        line1="About The"
-        line2="Current VPN"
+        line1="About Us"
+        // line2="Current VPN"
       />
 
       <AboutUsIconic />
@@ -43,9 +43,10 @@ function AboutUs() {
         line1={"How Exactly "}
         line2="Current VPN Works"
         iconText="Data Base"
+        desc="Our cutting-edge VPN operates on a sophisticated infrastructure designed to deliver unparalleled speed and stability. At its core, our service utilizes advanced encryption protocols to secure your data and online activities, safeguarding your privacy and anonymity. When you connect to our VPN servers, your internet traffic is routed through secure tunnels, effectively shielding it from prying eyes and potential threats. Moreover, our global network of servers is strategically located to minimize latency and optimize performance, ensuring lightning-fast connections wherever you are in the world."
       />
 
-      <div className="flex-1 flex w-full items-center flex-col md:flex-row space-y-4 md:space-y-0 my-4 ">
+      {/* <div className="flex-1 flex w-full items-center flex-col md:flex-row space-y-4 md:space-y-0 my-4 ">
         <div className="flex-1">
           <Card
             reverse={false}
@@ -75,7 +76,7 @@ function AboutUs() {
             ]}
           />
         </div>
-      </div>
+      </div> */}
       <FaqBox />
       <Footer />
     </div>

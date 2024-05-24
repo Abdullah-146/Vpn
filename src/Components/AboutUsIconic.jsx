@@ -38,12 +38,12 @@ function AboutUsIconic() {
   return (
     <div className="container z-0 relative  my-24 mt-48 min-h-[100px] hidden md:block  ">
       {/* absolute in */}
-      <div className="absolute top-0 left-0 -z-10 ">
+      <div className="absolute top-0 left-0 -z-10 floating-cloud ">
         <img src={Cloud} alt="" className="" />
       </div>
       {/* absolute out */}
       {/* 2nd absolute in */}
-      <div className="absolute bottom-0  right-0 -z-10 ">
+      <div className="absolute bottom-0  right-0 -z-10 floating-cloud ">
         <img src={Cloud} alt="" className="" />
       </div>
       {/* 2nd absolute out */}

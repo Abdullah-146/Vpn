@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../Components/Card";
 import SVG from "../assets/SVG1.svg";
 import icon from "../assets/icon1.svg";
@@ -12,8 +12,14 @@ import ContactUsComponent from "../Components/ContactUsComponent";
 
 import Share from "../assets/Share";
 import ContactUsIconic from "../Components/ContactUsIconic";
+import { useLocation } from "react-router-dom";
 
 function ContactUs() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="bg-gradient-to-r from-[#c4e9f974] to-white">
       <Nav />

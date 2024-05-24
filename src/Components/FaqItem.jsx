@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const FaqItem = ({ question, answer }) => {
+const FaqItem = ({ question, answer, index }) => {
   const [selected, setSelected] = useState(false);
   const [height, setMaxHeight] = useState("0px");
   const contentRef = useRef(null);
@@ -33,7 +33,7 @@ const FaqItem = ({ question, answer }) => {
       <div className="flex-1 flex flex-col space-y-4 p-5 drop-shadow-md bg-white rounded-md">
         <div className="flex-1 flex flex-row items-center justify-between">
           <div className="flex flex-row items-center justify-center space-x-5">
-            <p className="font-subHeading text-[#0A7AF9]">1</p>
+            <p className="font-subHeading text-[#0A7AF9]">{index + 1}</p>
             <p className="font-subHeading text-simple">{question}</p>
           </div>
           {selected ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}

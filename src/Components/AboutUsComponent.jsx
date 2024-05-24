@@ -26,7 +26,7 @@ function AboutUsComponent({
   icon,
   iconText = "Surf clouds",
   line1 = "Current VPN",
-  line2 = " fast and stable",
+  line2,
   reverse = true,
   stars = false,
 }) {
@@ -58,9 +58,15 @@ function AboutUsComponent({
           {line1} <br /> {line2}
         </h1>
 
-        <p className="text-subHeading font-subHeading">
-          Current VPN is an Ad-Free VPN with Incredible Speed! Download and see
-          the see yourself.
+        <p className="text-subHeading font-subHeading mt-4">
+          Welcome to our cutting-edge VPN service, where speed and stability
+          reign supreme. We're dedicated to providing lightning-fast and
+          reliable internet connections, ensuring seamless browsing and
+          streaming experiences for all our users. Whether you're accessing
+          sensitive information or indulging in your favorite content, our VPN
+          guarantees a secure and smooth online journey. Join us and elevate
+          your internet experience to new heights with our fast and stable
+          service.
         </p>
         <div className="  flex justify-start mt-[30%] ">
           <IconicComponent Icons={false} contain={false} />
