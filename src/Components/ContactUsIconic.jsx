@@ -5,6 +5,7 @@ import PhoneNumbers from "../assets/PhoneNumbers.svg";
 import Location from "../assets/Location.svg";
 import Contact from "../assets/Contact.svg";
 import { color } from "framer-motion";
+
 function ContactUsIconic() {
   const items = [
     {
@@ -33,19 +34,19 @@ function ContactUsIconic() {
     },
   ];
   return (
-    <div className="container z-0 relative  my-24 mt-9 min-h-[100px] hidden lg:block  ">
+    <div className="container z-0 relative my-24 mt-9 min-h-[100px] hidden lg:block">
       {/* absolute in */}
-      <div className="absolute top-0 left-0 -z-10 ">
-        <img src={Cloud} alt="" className="" />
+      <div className="absolute top-0 left-0 -z-10 floating-cloud">
+        <img src={Cloud} alt="Cloud" className="" />
       </div>
       {/* absolute out */}
       {/* 2nd absolute in */}
-      <div className="absolute bottom-0  right-0 -z-10 ">
-        <img src={Cloud} alt="" className="" />
+      <div className="absolute bottom-0 right-0 -z-10 floating-cloud">
+        <img src={Cloud} alt="Cloud" className="" />
       </div>
       {/* 2nd absolute out */}
       {/* Main Component Row in */}
-      <div className="flex justify-between ">
+      <div className="flex justify-between">
         {items.map((item, index) => (
           <CurvedItem
             key={index}

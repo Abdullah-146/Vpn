@@ -30,7 +30,7 @@ function ContactUsComponent({
     <div
       className={`flex justify-center items-center flex-col   ${
         reverse ? "lg:flex-row-reverse " : ""
-      }  flex-col lg:flex-row container mt-16  `}
+      }  flex-col lg:flex-row container mt-16  max-w-screen-xl overflow-hidden `}
       style={{ paddingRight: 0, marginRight: 0 }}
     >
       <img
