@@ -68,9 +68,9 @@ function IconicComponent({ Icons = true, contain = true }) {
       }`}
     >
       <div className="flex space-x-2 lg:space-x-10">
-        <Vertical number={"1000000000"} title={"Downloads"} />
-        <Vertical number={"30000"} title={"User In Month"} />
-        <Vertical number={"40000000"} title={"Premium User"} />
+        <Vertical number={"0"} title={"Downloads"} />
+        <Vertical number={"0"} title={"User In Month"} />
+        <Vertical number={"0"} title={"Premium User"} />
       </div>
       {Icons && (
         <div className="icon-slider-container">
