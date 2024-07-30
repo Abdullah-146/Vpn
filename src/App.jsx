@@ -24,19 +24,7 @@ import ContactUs from "./Pages/ContactUs";
 export default function App() {
   return (
     <Provider store={store}>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition="Bounce"
-      />
+      <ToastContainer position="top-right" autoClose={2000} />
       <Wrapper />
     </Provider>
   );

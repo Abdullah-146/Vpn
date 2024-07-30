@@ -16,17 +16,7 @@ export const errorHandler = (error, dontShow = false) => {
     }
   }
   if (!dontShow) {
-    toast.warn(err, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      transition: Bounce,
-    });
+    toast.warn(err);
   }
   return err;
 };

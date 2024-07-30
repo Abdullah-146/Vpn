@@ -18,6 +18,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import { Link, useNavigate } from "react-router-dom";
 import { isBrowser, isMobile, browserName } from "react-device-detect";
 import { registerUser } from "../Redux/slice/user/userAction";
+import { useDispatch } from "react-redux";
+import { toast } from "react-toastify";
 
 function Register() {
   const navigate = useNavigate();
@@ -28,9 +30,8 @@ function Register() {
     name: "",
   });
   const [agreeTerms, setAgreeTerms] = useState(false);
-  console.log("====================================");
-  console.log(agreeTerms);
-  console.log("====================================");
+  const dispatch = useDispatch();
+
   const handleRegister = () => {
     let device = {};
     device.id = " ";
@@ -49,8 +50,9 @@ function Register() {
       })
     ).then((res) => {
       console.log(res);
-      if (userLogin.fulfilled.match(res)) {
+      if (registerUser.fulfilled.match(res)) {
         navigate("/");
+        toast.success("Registered Successfully");
       }
     });
   };

@@ -48,7 +48,7 @@ function Vertical({ number, title }) {
 }
 
 function IconicComponent({ Icons = true, contain = true }) {
-  const [icons, setIcons] = useState([Company1, Company2, Company3]);
+  const [icons, setIcons] = useState([]);
 
   useEffect(() => {
     const interval = setInterval(() => {

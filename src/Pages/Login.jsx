@@ -34,14 +34,17 @@ function Login() {
     device.model = isMobile ? "Mobile" : isBrowser ? "Browser" : "Desktop";
     device.lastLoggedIn = new Date().toISOString();
 
-    dispatch(
-      userLogin({ email: data.email, password: data.password, device })
-    ).then((res) => {
-      console.log(res);
-      if (userLogin.fulfilled.match(res)) {
-        navigate("/");
-      }
-    });
+    dispatch(userLogin({ email: data.email, password: data.password, device }))
+      .then((res) => {
+        console.log(res);
+        if (userLogin.fulfilled.match(res)) {
+          navigate("/");
+          toast.success("Login Successfully");
+        }
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
   };
 
   return (
