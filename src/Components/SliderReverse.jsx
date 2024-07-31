@@ -24,13 +24,12 @@ function SlidingComponent({ icon, text }) {
 function Slider() {
   const [sliderItems, setIcons] = useState([
     { icon: shield, text: "Peace & Secure" },
-    { icon: planet, text: "Beutiful Ui Design" },
+    { icon: planet, text: "Beautiful UI Design" },
     { icon: Rocket, text: "Fast & Secure" },
-    { icon: emojihappy, text: "Beutiful Ui Design" },
-
-    { icon: shield, text: "Peace & Secure" },
-    { icon: planet, text: "Beutiful Ui Design" },
-    { icon: Rocket, text: "Fast & Secure" },
+    { icon: emojihappy, text: "Efficient" },
+    { icon: shield, text: "Reliable" },
+    { icon: planet, text: "Responsive" },
+    { icon: Rocket, text: "State of the Art" },
     { icon: emojihappy, text: "Nice Quality In Use" },
   ]);
   const duplicatedSlides = [

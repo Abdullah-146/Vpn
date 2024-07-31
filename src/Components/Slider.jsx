@@ -24,10 +24,10 @@ function Slider() {
     { icon: shield, text: "Peace & Secure" },
     { icon: planet, text: "Beautiful UI Design" },
     { icon: Rocket, text: "Fast & Secure" },
-    { icon: emojihappy, text: "Beautiful UI Design" },
-    { icon: shield, text: "Peace & Secure" },
-    { icon: planet, text: "Beautiful UI Design" },
-    { icon: Rocket, text: "Fast & Secure" },
+    { icon: emojihappy, text: "Efficient" },
+    { icon: shield, text: "Reliable" },
+    { icon: planet, text: "Responsive" },
+    { icon: Rocket, text: "State of the Art" },
     { icon: emojihappy, text: "Nice Quality In Use" },
   ]);
   const duplicatedSlides = [
