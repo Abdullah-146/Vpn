@@ -19,7 +19,7 @@ function ImageComponent({ icon, color1, color2, color3 }) {
   );
 }
 
-function Plan({ svg, title, price, color1, color2, content }) {
+function Plan({ svg, title, price, color1, color2, content, yearly }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -41,7 +41,9 @@ function Plan({ svg, title, price, color1, color2, content }) {
         </div>
         <div className="flex flex-col justify-center items-center">
           <p className="font-bold  text-2xl text-[#FB993F]">$ {price}</p>
-          <p className="text-subHeading  font-subHeading  ">Per Month</p>
+          <p className="text-subHeading  font-subHeading  ">
+            {yearly ? "Per Year" : "Per Month"}
+          </p>
         </div>
       </div>
 
