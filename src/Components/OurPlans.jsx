@@ -73,7 +73,8 @@ function OurPlans() {
             <Plan
               title="Pro"
               svg={ProPlanA}
-              price={80}
+              price={69}
+              mrp={80}
               color1={"#F6C149"}
               color2={"#EB5779"}
               content={content}
@@ -84,7 +85,8 @@ function OurPlans() {
             <Plan
               title="Advanced"
               svg={AdvancePlanA}
-              price={799}
+              price={399}
+              mrp={799}
               color1={"#FFD568"}
               color2={"#FB993F"}
               content={content}
@@ -93,7 +95,8 @@ function OurPlans() {
             <Plan
               title="Advanced"
               svg={AdvancePlanA}
-              price={999}
+              price={599}
+              mrp={999}
               color1={"#FFD568"}
               color2={"#FB993F"}
               content={content}
