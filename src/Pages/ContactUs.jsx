@@ -38,7 +38,7 @@ function ContactUs() {
       <p className="font-heading text-heading text-center">Contact Us..!</p>
       <ContactUsIconic />
 
-      <Card
+      {/* <Card
         SVG={ContactUsCard}
         reverse={false}
         line1="Enjoy the Stable"
@@ -47,7 +47,7 @@ function ContactUs() {
         // content="Experience uninterrupted online activities as this VPN optimizes your network for a consistently smooth performance. Whether youare gaming, streaming, or engaging in video calls, relish the seamless connectivity that minimizes latency. Elevate your digital experience and bid farewell to disruptions – our VPN ensures a stable connection and minimal ping for a truly enjoyable online journey. "
         content=""
         icon={Chart}
-      />
+      /> */}
 
       <Footer />
     </div>

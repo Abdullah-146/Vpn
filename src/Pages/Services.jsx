@@ -79,7 +79,7 @@ function Services() {
           />
         </div>
       </div>
-      <FaqBox />
+      {/* <FaqBox /> */}
       <Footer />
     </div>
   );

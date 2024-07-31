@@ -5,11 +5,10 @@ import yellowThunder from "../assets/yellowThunder.svg";
 import BlueFire from "../assets/BlueFire.svg";
 import Cloud from "../assets/Cloud.svg";
 
-
 function DynamicText({ icon, Heading, subHeading }) {
   return (
     <div className="my-5  relative">
-          {/* absolute in */}
+      {/* absolute in */}
       <div className="absolute top-0 left-0 -z-10 hidden md:flex">
         <img src={Cloud} alt="" className="" />
       </div>
@@ -33,10 +32,7 @@ function DynamicText({ icon, Heading, subHeading }) {
         <img src={BlueFire} alt="" className="hidden md:flex z-[2]" />
       </div>
       <p className="text-subHeading font-subHeading text-center container md:w-[75%] w-[100%] md:mt-[-40px] ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-        voluptatibus quaerat minus expedita aspernatur libero nulla. Facere quia
-        commodi asperiores, cupiditate ratione, saepe obcaecati itaque culpa
-        amet voluptate laboriosam aperiam?
+        Your digital life protected from 69$ a month{" "}
       </p>
     </div>
   );

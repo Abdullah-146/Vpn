@@ -3,15 +3,22 @@ import shield from "../assets/shield.svg";
 import planet from "../assets/planet.svg";
 import Rocket from "../assets/Rocket.svg";
 import emojihappy from "../assets/emojihappy.svg";
+import { FaShieldAlt, FaRocket, FaRegSmile } from "react-icons/fa";
+import { MdSecurity } from "react-icons/md";
 import { motion } from "framer-motion";
 
+// Updated to ensure correct icon imports
 function SlidingComponent({ icon, text }) {
   return (
     <div
       className="flex justify-center items-center bg-[#66778D12] border-2 w-auto h-20 rounded-3xl px-10"
       style={{ backgroundColor: "white" }}
     >
-      <img src={icon} alt="" className="w-10" />
+      {typeof icon === "string" ? (
+        <img src={icon} alt="" className="w-10" />
+      ) : (
+        <div className="w-10 text-[#27223E]">{icon}</div>
+      )}
       <p className="text-[#27223E] text-xl font-semibold ml-3 whitespace-nowrap">
         {text}
       </p>
@@ -29,7 +36,32 @@ function Slider() {
     { icon: planet, text: "Responsive" },
     { icon: Rocket, text: "State of the Art" },
     { icon: emojihappy, text: "Nice Quality In Use" },
+    {
+      icon: <FaShieldAlt className="text-[blue]" size={24} />,
+      text: "Advanced Protection",
+    },
+    {
+      icon: <FaRocket className="text-[blue]" size={24} />,
+      text: "Global Reach",
+    },
+    {
+      icon: <FaRocket className="text-[blue]" size={24} />,
+      text: "High-Speed",
+    },
+    {
+      icon: <FaRegSmile className="text-[orange]" size={24} />,
+      text: "User Friendly",
+    },
+    {
+      icon: <MdSecurity className="text-[blue]" size={24} />,
+      text: "Top Security",
+    },
+    {
+      icon: <FaRocket className="text-[blue]" size={24} />,
+      text: "Innovative Design",
+    },
   ]);
+
   const duplicatedSlides = [
     ...sliderItems,
     ...sliderItems,

@@ -75,30 +75,21 @@ const Footer = () => {
         <div className="flex-1 flex flex-col items-center text-center md:items-start md:text-start md:flex-row justify-around">
           <div className="flex flex-col space-y-3">
             <p className="font-heading text-heading">Products</p>
-            <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
-              VPN For Mac
-            </p>
+
             <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
               VPN For PC
             </p>
-            <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
-              Free VPN Download
-            </p>
+
             <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
               VPN IOS
             </p>
             <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
               VPN For Chrome
             </p>
-            <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
-              VPN For TV
-            </p>
           </div>
           <div className="flex flex-col space-y-3">
             <p className="font-heading text-heading">VPN Info</p>
-            <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
-              VPN Blog
-            </p>
+
             <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
               What is a VPN
             </p>

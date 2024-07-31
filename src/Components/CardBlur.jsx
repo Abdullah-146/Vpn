@@ -59,12 +59,12 @@ function CardBlur({
 
         <p className="text-subHeading font-subHeading">{desc}</p>
 
-        <p className=" text-primary text-2xl  font-subHeading mt-5 flex  items-center cursor-pointer">
+        {/* <p className=" text-primary text-2xl  font-subHeading mt-5 flex  items-center cursor-pointer">
           Know More
           <span className="ml-1">
             <ArrowForwardIcon />
           </span>
-        </p>
+        </p> */}
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ function Nav() {
       </div>
       <NavLink
         className="py-5 px-8 justify-center items-center rounded-lg hidden md:flex"
-        to={`/Login`}
+        to={`/Register`}
       >
         <p
           className="font-heading text-white text-xl ml-4  py-2 rounded-full px-10"
