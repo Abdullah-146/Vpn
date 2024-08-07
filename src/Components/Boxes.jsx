@@ -10,33 +10,33 @@ function Boxes() {
   const boxes = [
     {
       icon: Graph,
-      heading: "Connection Detail",
-      text: "Lorem ipsum dolor sit amet consectetur",
+      heading: "Security and Privacy",
+      text: "Ensure your data is always protected.",
     },
     {
       icon: Chat,
-      heading: "Connection Detail",
-      text: "Lorem ipsum dolor sit amet consectetur",
+      heading: "Performance and Reliability",
+      text: "xperience lightning-fast speeds.",
     },
     {
       icon: Lockk,
-      heading: "Connection Detail",
-      text: "Lorem ipsum dolor sit amet consectetur",
+      heading: "Accessibility and Freedom",
+      text: "Global Access content from around the world.",
     },
     {
       icon: Activity,
-      heading: "Connection Detail",
-      text: "Lorem ipsum dolor sit amet consectetur",
+      heading: "Trust and Assurance",
+      text: "Trusted by millions worldwide.",
     },
     {
       icon: Chart,
-      heading: "Connection Detail",
-      text: "Lorem ipsum dolor sit amet consectetur",
+      heading: "Value and Convenience",
+      text: "Affordable plans for everyone.",
     },
     {
       icon: MiddleStar,
-      heading: "Connection Detail",
-      text: "Lorem ipsum dolor sit amet consectetur",
+      heading: "Support",
+      text: "24/7 customer support",
     },
   ];
 

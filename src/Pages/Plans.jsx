@@ -34,12 +34,12 @@ function Plans() {
 
       <PlansTable />
 
-      <DynamicText
+      {/* <DynamicText
         icon={Planet}
         Heading={"See How We Compare To Other Vpn Providers"}
         subHeading={"Why Choose Current VPN?"}
       />
-      <CardSlider />
+      <CardSlider /> */}
 
       <CardBlur
         SVG={AboutUsSVG}

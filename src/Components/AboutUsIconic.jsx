@@ -60,8 +60,8 @@ function AboutUsIconic() {
           color3={"#FFFFFF"}
         />
         <TextComponent
-          title={"Social Media"}
-          para={"Your Best Choice For Social Media"}
+          title={"streaming"}
+          para={"Your Best Choice For streaming"}
         />
         <ImageComponent
           icon={commentdots}

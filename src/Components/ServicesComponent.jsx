@@ -42,9 +42,9 @@ function ServicesComponent({
         </h1>
 
         <p className="text-subHeading font-subHeading">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+          Experience unparalleled online security and blazing-fast speeds with
+          CurrentVPN. Unlock global content effortlessly while enjoying
+          anonymous, encrypted browsing and streaming.
         </p>
 
         <img src={Download} alt="" className="w-96 h-52 cursor-pointer  " />

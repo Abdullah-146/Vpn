@@ -65,10 +65,6 @@ function ContactUsComponent({
               placeholder="First Name"
               Icon={PersonOutlineIcon}
               onChange={(e) => setData({ ...data, firstName: e.target.value })}
-              style={{
-                paddingTop: "0.75rem",
-                paddingBottom: "0.75rem",
-              }}
             />
             <InputField
               type="text"
@@ -76,10 +72,6 @@ function ContactUsComponent({
               text="Subject"
               Icon={bulb}
               onChange={(e) => setData({ ...data, subject: e.target.value })}
-              style={{
-                paddingTop: "0.75rem",
-                paddingBottom: "0.75rem",
-              }}
             />
           </div>
           <InputField

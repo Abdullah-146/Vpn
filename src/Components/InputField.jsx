@@ -13,12 +13,12 @@ function InputField({ style, Icon, text = "Email", type, onChange }) {
     >
       {text == "Password" ? <img src={Icon} alt="" /> : <Icon />}
       <div className=" w-full text-start h-full ml-2">
-        <p className="text-[#9999AF] text-base">{text}</p>
+        {/* <p className="text-[#9999AF] text-base">{text}</p> */}
 
         <div>
           <input
             type={type}
-            placeholder=""
+            placeholder={text}
             className="w-full outline-none bg-transparent"
             onChange={onChange}
           />
