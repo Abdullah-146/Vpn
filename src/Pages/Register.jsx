@@ -78,9 +78,9 @@ function Register() {
           </div>
           {/* All login Fields in */}
           <div className="flex flex-col w-full  text-center items-center   ">
-            <h1 className="text-4xl font-medium text-primary flex">
+            <h1 className="text-4xl font-medium text-primary flex items-center">
               <span>Create New&nbsp;</span>
-              <span className="font-heading">Account!</span>
+              <span className="font-heading pt-[4.5px]">Account!</span>
             </h1>
             <p className="text-xl text-[#7B899D] font-simple mt-4 mb-10">
               Please Fill Out The Form To Register...
