@@ -16,7 +16,7 @@ function Boxes() {
     {
       icon: Chat,
       heading: "Performance and Reliability",
-      text: "xperience lightning-fast speeds.",
+      text: "experience lightning-fast speeds.",
     },
     {
       icon: Lockk,

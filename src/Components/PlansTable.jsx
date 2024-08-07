@@ -62,7 +62,13 @@ function PlansTable() {
         <p className="text-simple font-heading w-[170px]">Advance</p>
       </div>
       <Row plan="Member Account" free={1} advance={3} pro={2} bg={true} />
-      <Row plan="Device Connections" free={1} advance={12} pro={6} bg={false} />
+      <Row
+        plan="Device Connections"
+        free={1}
+        advance={10}
+        pro={10}
+        bg={false}
+      />
       <Row plan="Platforms" free={1} advance={"All"} pro={3} bg={true} />
       <Row
         plan="Military Grade Encryption"
