@@ -24,10 +24,10 @@ function Plan({ svg, title, price, color1, color2, content, yearly, mrp }) {
 
   return (
     <div
-      className="bg-white p-7 min-w-[30%] rounded-2xl flex flex-col justify-between shadow-lg my-4 transition-all duration-300 ease-in-out"
+      className="bg-white p-7 min-w-[30%] rounded-2xl flex flex-col justify-between shadow-lg my-4 transition-all duration-300 ease-in-out "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ height: isHovered ? "500px" : "auto" }}
+      style={{ height: isHovered ? "600px" : "auto" }}
     >
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center">
@@ -40,9 +40,13 @@ function Plan({ svg, title, price, color1, color2, content, yearly, mrp }) {
           <p className="font-heading text-simple ml-3">{title}</p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          {mrp > price && (
+          {mrp > price ? (
             <p className="text-subHeading font-subHeading text-bluish line-through">
               $ {mrp}
+            </p>
+          ) : (
+            <p className="text-subHeading font-subHeading text-bluish">
+              &nbsp;
             </p>
           )}
           <p className="font-bold text-2xl text-[#FB993F]">$ {price}</p>

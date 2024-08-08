@@ -8,16 +8,28 @@ import Save40 from "../assets/Save40.svg";
 function OurPlans() {
   const [toggle, setToggle] = React.useState(true);
 
-  const [content, setContent] = React.useState({
+  const [contentfree, setContentfree] = React.useState({
     line1: { text: "Enjoy the Stable", bool: true },
-    line2: { text: "Connection And Ping", bool: true },
-    line3: { text: "Enjoy the Stable", bool: false },
-    line4: { text: "Connection And Ping", bool: false },
+    line2: { text: "Devices 1", bool: true },
+    line3: { text: "Premium Server", bool: false },
+    line4: { text: "High Speed", bool: false },
+    line5: { text: "Email Support", bool: false },
+    line6: { text: "Malware Protection", bool: false },
+    line7: { text: "Gaming or Streaming Premium", bool: false },
+  });
+  const [contentPremimum, setContentPremimum] = React.useState({
+    line1: { text: "Enjoy the Stable", bool: true },
+    line2: { text: "Devices 1", bool: true },
+    line3: { text: "Premium Server", bool: true },
+    line4: { text: "High Speed", bool: true },
+    line5: { text: "Email Support", bool: true },
+    line6: { text: "Malware Protection", bool: true },
+    line7: { text: "Gaming or Streaming Premium", bool: true },
   });
   return (
     <div className="container relative">
-      <div className="flex justify-center items-center w-full ">
-        <div className="border-2 bg-gradient-to-r py-1 px-1 rounded-3xl from-[#69cce263] to-[#8ef0e83a] flex space-x-2 ml-0 md:ml-64">
+      <div className="flex justify-center items-center w-full  ">
+        <div className="border-2 bg-gradient-to-r py-1 px-1 rounded-3xl from-[#69cce263] to-[#8ef0e83a] flex space-x-2 ml-0 md:ml-64 cursor-pointer">
           <div
             className={` py-3 rounded-3xl  px-8   `}
             style={{
@@ -68,16 +80,16 @@ function OurPlans() {
               price={0}
               color1={"#A07CED"}
               color2={"#5E63DA"}
-              content={content}
+              content={contentfree}
             />
             <Plan
               title="Pro"
               svg={ProPlanA}
-              price={69}
-              mrp={80}
+              price={10}
+              mrp={12}
               color1={"#F6C149"}
               color2={"#EB5779"}
-              content={content}
+              content={contentPremimum}
             />
           </>
         ) : (
@@ -85,21 +97,21 @@ function OurPlans() {
             <Plan
               title="Advanced"
               svg={AdvancePlanA}
-              price={399}
-              mrp={799}
+              price={60}
+              mrp={120}
               color1={"#FFD568"}
               color2={"#FB993F"}
-              content={content}
+              content={contentPremimum}
               yearly={!toggle}
             />
             <Plan
               title="Advanced"
               svg={AdvancePlanA}
-              price={599}
-              mrp={999}
+              price={110}
+              mrp={199}
               color1={"#FFD568"}
               color2={"#FB993F"}
-              content={content}
+              content={contentPremimum}
               yearly={!toggle}
             />
           </>
