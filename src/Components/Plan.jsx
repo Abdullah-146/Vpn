@@ -19,7 +19,17 @@ function ImageComponent({ icon, color1, color2, color3 }) {
   );
 }
 
-function Plan({ svg, title, price, color1, color2, content, yearly, mrp }) {
+function Plan({
+  svg,
+  title,
+  price,
+  color1,
+  color2,
+  content,
+  yearly,
+  twoYears = false,
+  mrp,
+}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -51,7 +61,7 @@ function Plan({ svg, title, price, color1, color2, content, yearly, mrp }) {
           )}
           <p className="font-bold text-2xl text-[#FB993F]">$ {price}</p>
           <p className="text-subHeading font-subHeading">
-            {yearly ? "Per Year" : "Per Month"}
+            {yearly ? (twoYears ? "Per 2 Year" : "Per Years") : "Per Month"}
           </p>
         </div>
       </div>

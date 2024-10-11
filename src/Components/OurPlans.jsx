@@ -109,6 +109,7 @@ function OurPlans() {
               svg={AdvancePlanA}
               price={110}
               mrp={199}
+              twoYears={true}
               color1={"#FFD568"}
               color2={"#FB993F"}
               content={contentPremimum}
