@@ -20,6 +20,8 @@ import store from "./Redux/store";
 import { useEffect } from "react";
 import { getAllFaqs } from "./Redux/slice/faq/faqAction";
 import ContactUs from "./Pages/ContactUs";
+import TermsAndConditions from "./Pages/TermsAndConditions";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -65,6 +67,11 @@ function Wrapper() {
           <Route path="/Plans" element={<Plans />}></Route>
           <Route path="/ContactUs" element={<ContactUs />}></Route>
           <Route path="/ThankYou" element={<CommingSoon />}></Route>
+          <Route
+            path="/TermsAndConditions"
+            element={<TermsAndConditions />}
+          ></Route>
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />}></Route>
 
           {/* Invalid url */}
           <Route path="*" element={<Navigate to="/" />} />
