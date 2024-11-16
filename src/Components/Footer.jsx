@@ -124,12 +124,12 @@ const Footer = () => {
             <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
               FAQ
             </p>
-            <NavLink to="/TermsAndConditions">
+            <NavLink to="/terms-and-conditions">
               <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
                 Terms and Conditions
               </p>
             </NavLink>
-            <NavLink to="/PrivacyPolicy">
+            <NavLink to="/privacy-policy">
               <p className="font-simple text-simple text-[#8D98A9] hover:text-[#092857] cursor-pointer">
                 Privacy Policy
               </p>

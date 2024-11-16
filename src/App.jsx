@@ -68,10 +68,10 @@ function Wrapper() {
           <Route path="/ContactUs" element={<ContactUs />}></Route>
           <Route path="/ThankYou" element={<CommingSoon />}></Route>
           <Route
-            path="/TermsAndConditions"
+            path="/terms-and-conditions"
             element={<TermsAndConditions />}
           ></Route>
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />}></Route>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
 
           {/* Invalid url */}
           <Route path="*" element={<Navigate to="/" />} />
